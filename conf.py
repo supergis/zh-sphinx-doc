@@ -1,8 +1,23 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
-
 import sys, os
+
+extensions = [
+        'sphinx.ext.viewcode',
+        'nbsphinx',
+        'sphinx.ext.autodoc','sphinx.ext.intersphinx', 
+        'sphinx.ext.doctest', 'sphinx.ext.extlinks',
+        'sphinx.ext.autosummary',
+        'sphinx.ext.mathjax',
+        'numpydoc',
+
+        # Optional
+        #'sphinx.ext.graphviz',
+    
+        # 'rst2pdf.pdfbuilder'
+]
+
 project = u'Sphinx 使用手册'
 #copyright = u''
 version = u''
@@ -11,6 +26,8 @@ release = u''
 copyright = '2016,GPL. Add PDF and Simple Chinese support by supergis.'
 author = 'supergis'
 
+# The encoding of source files.
+source_encoding = 'utf-8-sig'
 
 source_suffix = '.rst'
 

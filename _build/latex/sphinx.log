@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.30)  7 MAY 2016 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.30)  7 MAY 2016 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1035,7 +1035,11 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 
 Writing index file sphinx.idx
-(./sphinx.aux)
+(./sphinx.aux
+
+LaTeX Warning: Label `domains:_CPPv2N8theclass4nameE' multiply defined.
+
+)
 \openout1 = `sphinx.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
@@ -1231,19 +1235,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-]
+] (./sphinx.toc
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 39.
+ [1
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+] [2])
 \tf@toc=\write7
 \openout7 = `sphinx.toc'.
 
-Adding blank page after the table of contents.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 144.
-[1
 
-] [2]
+Adding blank page after the table of contents.
+[3] [4]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 149.
@@ -1251,8 +1256,6 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 149.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 149.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 154.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 155.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1283,38 +1286,10 @@ LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
 
 ]
 Chapter 3.
-
-LaTeX Warning: Hyper reference `faq:usingwith' on page 5 undefined on input lin
-e 234.
-
-
-LaTeX Warning: Hyper reference `tutorial::doc' on page 5 undefined on input lin
-e 248.
-
 [5] [6]
 Chapter 4.
-
-LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 7 undef
-ined on input line 260.
-
-
-LaTeX Warning: Hyper reference `glossary:term-configuration-directory' on page 
-7 undefined on input line 262.
-
-
-LaTeX Warning: Hyper reference `invocation:invocation' on page 7 undefined on i
-nput line 262.
-
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 264.
-
-LaTeX Warning: Hyper reference `invocation:invocation-apidoc' on page 7 undefin
-ed on input line 273.
-
-
-LaTeX Warning: Hyper reference `glossary:term-master-document' on page 7 undefi
-ned on input line 279.
-
 
 Overfull \hbox (14.79999pt too wide) in paragraph at lines 300--300
  [] 
@@ -1327,12 +1302,7 @@ LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 305.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 317.
-
-
-LaTeX Warning: Hyper reference `glossary:term-document-name' on page 8 undefine
-d on input line 320.
-
-<more.png, id=226, 32.12pt x 32.12pt>
+ <more.png, id=721, 32.12pt x 32.12pt>
 File: more.png Graphic file (type png)
  <use more.png>
 Package pdftex.def Info: more.png used on input line 323.
@@ -1341,18 +1311,10 @@ File: more.png Graphic file (type png)
  <use more.png>
 Package pdftex.def Info: more.png used on input line 323.
 (pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
-
-
-LaTeX Warning: Hyper reference `markup/toctree:toctree-directive' on page 8 und
-efined on input line 323.
-
-
-LaTeX Warning: Hyper reference `markup/inline:role-ref' on page 8 undefined on 
-input line 333.
-
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 333.
 File: more.png Graphic file (type png)
+
 <use more.png>
 Package pdftex.def Info: more.png used on input line 337.
 (pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
@@ -1360,83 +1322,41 @@ File: more.png Graphic file (type png)
  <use more.png>
 Package pdftex.def Info: more.png used on input line 337.
 (pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
-
-
-LaTeX Warning: Hyper reference `rest:rst-primer' on page 8 undefined on input l
-ine 337.
-
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 337.
-
-LaTeX Warning: Hyper reference `markup/index:sphinxmarkup' on page 8 undefined 
-on input line 338.
-
-
-LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 8 undef
-ined on input line 352.
-
 File: more.png Graphic file (type png)
-<use more.png>
+ <use more.png>
 Package pdftex.def Info: more.png used on input line 354.
 (pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
 File: more.png Graphic file (type png)
  <use more.png>
 Package pdftex.def Info: more.png used on input line 354.
 (pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
-
-
-LaTeX Warning: Hyper reference `invocation:invocation' on page 8 undefined on i
-nput line 354.
-
-
-LaTeX Warning: Hyper reference `builders:sphinx.builders.latex.LaTeXBuilder' on
- page 8 undefined on input line 370.
-
-[8 <./more.png>]
-
-LaTeX Warning: Hyper reference `domains:directive-py:class' on page 9 undefined
- on input line 409.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:method' on page 9 undefine
-d on input line 409.
-
+ [8 <./more.png>]
 LaTeX Font Info:    Try loading font information for TS1+pcr on input line 413.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
-
-LaTeX Warning: Hyper reference `tutorial:enumerate' on page 9 undefined on inpu
-t line 416.
-
 File: more.png Graphic file (type png)
+ <use more.png>
+Package pdftex.def Info: more.png used on input line 423.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+File: more.png Graphic file (type png)
+
 <use more.png>
 Package pdftex.def Info: more.png used on input line 423.
 (pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
 File: more.png Graphic file (type png)
  <use more.png>
-Package pdftex.def Info: more.png used on input line 423.
-(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
-
-
-LaTeX Warning: Hyper reference `domains:domains' on page 9 undefined on input l
-ine 423.
-
-File: more.png Graphic file (type png)
-<use more.png>
 Package pdftex.def Info: more.png used on input line 439.
 (pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
 File: more.png Graphic file (type png)
  <use more.png>
 Package pdftex.def Info: more.png used on input line 439.
 (pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
-
-
-LaTeX Warning: Hyper reference `config:build-config' on page 9 undefined on inp
-ut line 439.
-
-[9]
+ [9]
 File: more.png Graphic file (type png)
  <use more.png>
 Package pdftex.def Info: more.png used on input line 466.
@@ -1445,55 +1365,23 @@ File: more.png Graphic file (type png)
  <use more.png>
 Package pdftex.def Info: more.png used on input line 466.
 (pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:module-sphinx.ext.autodoc' on page 
-10 undefined on input line 466.
-
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 490.
+
 [10]
 Chapter 5.
-
-LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 11 unde
-fined on input line 502.
-
-
-LaTeX Warning: Hyper reference `ext/doctest:module-sphinx.ext.doctest' on page 
-11 undefined on input line 539.
-
-
-LaTeX Warning: Hyper reference `builders:builders' on page 11 undefined on inpu
-t line 546.
-
-
-LaTeX Warning: Hyper reference `glossary:term-environment' on page 11 undefined
- on input line 563.
-
-
-LaTeX Warning: Hyper reference `markup/misc:directive-only' on page 11 undefine
-d on input line 572.
-
 [11
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 614--617
-\C70/gbsn/m/it/10/89 † \C70/gbsn/bx/n/10/76 Ö \T1/pcr/m/n/10 conf.py \C70/gbsn/
-m/n/10/91 Ì \C70/gbsn/bx/n/10/76 „ \C70/gbsn/m/n/10/91 M \C70/gbsn/bx/n/10/7f n
+\C70/gbsn/m/it/10/89 † \C70/gbsn/m/it/10/76 Ö \T1/pcr/m/n/10 conf.py \C70/gbsn/
+m/n/10/91 Ì \C70/gbsn/m/it/10/76 „ \C70/gbsn/m/n/10/91 M \C70/gbsn/bx/n/10/7f n
  \C70/gbsn/m/n/10/50 <\T1/ptm/m/n/10 . value \C70/gbsn/m/it/10/66 / \C70/gbsn/b
 x/it/10/4e ^^@ * \C70/gbsn/bx/n/10/5b W \C70/gbsn/bx/it/10/7b & \C70/gbsn/bx/it
 /10/4e 2 \C70/gbsn/m/it/10/62 ^^V \C70/gbsn/bx/n/10/5b W \C70/gbsn/bx/n/10/51 x
 \T1/ptm/m/n/10 . \C70/gbsn/m/n/10/4f ‹ \C70/gbsn/m/it/10/59 ‚\T1/ptm/m/n/10 : \
 T1/pcr/m/n/10 -D
  []
-
-
-LaTeX Warning: Hyper reference `invocation:cmdoption-sphinx-build-b' on page 12
- undefined on input line 696.
-
-
-LaTeX Warning: Hyper reference `invocation:cmdoption-sphinx-build-d' on page 12
- undefined on input line 696.
 
 [12] [13] [14
 
@@ -1507,26 +1395,17 @@ ge 15 undefined on input line 788.
 
 ]
 Chapter 7.
-[17]
-
-LaTeX Warning: Hyper reference `markup/inline:inline-markup' on page 18 undefin
-ed on input line 912.
-
-[18]
+[17] [18]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1050.
  [19]
-
-LaTeX Warning: Hyper reference `markup/inline:ref-role' on page 20 undefined on
- input line 1067.
-
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1119.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1119.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1119.
-[20]
+ [20]
 Underfull \hbox (badness 10000) in paragraph at lines 1122--1126
 []\C70/gbsn/m/it/10/8b f \C70/gbsn/bx/n/10/54 J\T1/ptm/m/n/10 : []\T1/ptm/b/n/1
 0 :dudir:`attention`[]\T1/ptm/m/n/10 , []\T1/ptm/b/n/10 :dudir:`caution`[]\T1/p
@@ -1535,427 +1414,56 @@ tm/m/n/10 , []\T1/ptm/b/n/10 :dudir:`danger`[]\T1/ptm/m/n/10 , []\T1/ptm/b/n/10
 0 ,
  []
 
-
-LaTeX Warning: Hyper reference `rest:id129' on page 21 undefined on input line 
-1131.
-
-
-LaTeX Warning: Hyper reference `markup/index:sphinxmarkup' on page 21 undefined
- on input line 1228.
-
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1230.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1230.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1230.
-[21] [22]
-
-LaTeX Warning: Hyper reference `markup/inline:default-substitutions' on page 23
- undefined on input line 1334.
-
-[23] [24]
+[21] [22] [23] [24]
 Chapter 8.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1400.
-
-LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 25 un
-defined on input line 1429.
-
-
-LaTeX Warning: Hyper reference `markup/inline:xref-syntax' on page 25 undefined
- on input line 1430.
-
 [25
 
-]
-
-LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 26 unde
-fined on input line 1504.
-
-[26]
-
-LaTeX Warning: Hyper reference `domains:basic-domain-markup' on page 27 undefin
-ed on input line 1535.
-
-
-LaTeX Warning: Hyper reference `markup/misc:directive-index' on page 27 undefin
-ed on input line 1535.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:module' on page 27 undefin
-ed on input line 1538.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-note' on page 27 undefine
-d on input line 1577.
-
-[27]
-
-LaTeX Warning: Hyper reference `markup/para:directive-versionadded' on page 28 
-undefined on input line 1604.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-versionchanged' on page 2
-8 undefined on input line 1612.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-seealso' on page 28 undef
-ined on input line 1629.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-seealso' on page 28 undef
-ined on input line 1631.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-seealso' on page 28 undef
-ined on input line 1633.
-
-[28]
-
-LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 29 un
-defined on input line 1709.
-
-
-LaTeX Warning: Hyper reference `markup/toctree:toctree-directive' on page 29 un
-defined on input line 1709.
-
-
-LaTeX Warning: Hyper reference `markup/inline:role-term' on page 29 undefined o
-n input line 1720.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-productionlist' on page 2
-9 undefined on input line 1764.
-
-
-LaTeX Warning: Hyper reference `markup/inline:role-token' on page 29 undefined 
-on input line 1769.
-
-[29] [30] [31]
-
-LaTeX Warning: Hyper reference `domains:domains' on page 32 undefined on input 
-line 1981.
-
-
-LaTeX Warning: Hyper reference `domains:python-roles' on page 32 undefined on i
-nput line 2011.
-
-
-LaTeX Warning: Hyper reference `domains:c-roles' on page 32 undefined on input 
-line 2014.
-
-[32]
-
-LaTeX Warning: Hyper reference `domains:cpp-roles' on page 33 undefined on inpu
-t line 2017.
-
-
-LaTeX Warning: Hyper reference `domains:js-roles' on page 33 undefined on input
- line 2020.
-
-
-LaTeX Warning: Hyper reference `domains:rst-roles' on page 33 undefined on inpu
-t line 2023.
-
-
-LaTeX Warning: Hyper reference `markup/inline:role-ref' on page 33 undefined on
- input line 2072.
-
-[33]
-
-LaTeX Warning: Hyper reference `domains:directive-envvar' on page 34 undefined 
-on input line 2132.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-productionlist' on page 3
-4 undefined on input line 2140.
-
-
-LaTeX Warning: Hyper reference `domains:directive-option' on page 34 undefined 
-on input line 2156.
-
-[34]
+] [26] [27] [28] [29] [30] [31] [32] [33] [34]
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
 (Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 2214.
 
-
-
-LaTeX Warning: Hyper reference `markup/inline:role-guilabel' on page 35 undefin
-ed on input line 2290.
-
-
-LaTeX Warning: Hyper reference `markup/inline:role-file' on page 35 undefined o
-n input line 2331.
-
-
-LaTeX Warning: Hyper reference `markup/misc:role-index' on page 35 undefined on
- input line 2339.
-
-[35] [36]
-
-LaTeX Warning: Hyper reference `markup/misc:directive-codeauthor' on page 37 un
-defined on input line 2446.
-
-
-LaTeX Warning: Hyper reference `markup/misc:directive-sectionauthor' on page 37
- undefined on input line 2447.
-
-
-LaTeX Warning: Hyper reference `domains:domains' on page 37 undefined on input 
-line 2456.
-
-
+ [35] [36]
 Underfull \hbox (badness 10000) in paragraph at lines 2503--2506
 []\C70/gbsn/bx/n/10/4f ‹ \C70/gbsn/bx/n/10/59 ‚\T1/ptm/m/n/10 , \T1/pcr/m/n/10 
 module:
  []
 
 [37]
-
-LaTeX Warning: Hyper reference `markup/misc:directive-index' on page 38 undefin
-ed on input line 2539.
-
 LaTeX Font Info:    Font shape `TS1/pcr/bx/n' in size <9> not available
 (Font)              Font shape `TS1/pcr/b/n' tried instead on input line 2547.
-
-LaTeX Warning: Hyper reference `rest:rst-tables' on page 38 undefined on input 
-line 2580.
-
-[38]
-
-LaTeX Warning: Hyper reference `markup/misc:directive-tabularcolumns' on page 3
-9 undefined on input line 2639.
-
-
+ [38]
 Underfull \hbox (badness 10000) in paragraph at lines 2632--2641
 
  []
-
-
-LaTeX Warning: Hyper reference `domains:domains' on page 39 undefined on input 
-line 2642.
 
 [39] [40
 
 ]
 Chapter 9.
-
-LaTeX Warning: Hyper reference `glossary:term-directive' on page 41 undefined o
-n input line 2665.
-
-
-LaTeX Warning: Hyper reference `glossary:term-role' on page 41 undefined on inp
-ut line 2666.
-
-
-LaTeX Warning: Hyper reference `glossary:term-object' on page 41 undefined on i
-nput line 2666.
-
-
-LaTeX Warning: Hyper reference `ext/appapi:domain-api' on page 41 undefined on 
-input line 2677.
-
-[41]
-
-LaTeX Warning: Hyper reference `markup/inline:xref-syntax' on page 42 undefined
- on input line 2752.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:class' on page 42 undefine
-d on input line 2781.
-
-[42]
-
-LaTeX Warning: Hyper reference `domains:directive-py:module' on page 43 undefin
-ed on input line 2804.
-
-
-LaTeX Warning: Hyper reference `domains:role-py:mod' on page 43 undefined on in
-put line 2806.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:module' on page 43 undefin
-ed on input line 2808.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:currentmodule' on page 43 
-undefined on input line 2809.
-
-
-LaTeX Warning: Hyper reference `domains:signatures' on page 43 undefined on inp
-ut line 2840.
-
-
-LaTeX Warning: Hyper reference `domains:signatures' on page 43 undefined on inp
-ut line 2864.
-
-[43]
-
-LaTeX Warning: Hyper reference `domains:signatures' on page 44 undefined on inp
-ut line 2901.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:method' on page 44 undefin
-ed on input line 2909.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:method' on page 44 undefin
-ed on input line 2919.
-
-
-LaTeX Warning: Hyper reference `domains:role-py:func' on page 44 undefined on i
-nput line 2958.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:decorator' on page 44 unde
-fined on input line 2966.
-
-
-LaTeX Warning: Hyper reference `domains:role-py:meth' on page 44 undefined on i
-nput line 2968.
-
-[44] [45] [46] [47] [48]
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_object
-_type' on page 49 undefined on input line 3464.
-
-
-LaTeX Warning: Hyper reference `markup/inline:role-option' on page 49 undefined
- on input line 3481.
-
-
-LaTeX Warning: Hyper reference `markup/inline:role-envvar' on page 49 undefined
- on input line 3491.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:currentmodule' on page 49 
-undefined on input line 3499.
-
-
-LaTeX Warning: Hyper reference `domains:directive-option' on page 49 undefined 
-on input line 3500.
-
-
-LaTeX Warning: Hyper reference `domains:directive-program' on page 49 undefined
- on input line 3503.
-
-
-LaTeX Warning: Hyper reference `markup/inline:role-option' on page 49 undefined
- on input line 3504.
-
-[49]
-
-LaTeX Warning: Hyper reference `domains:signatures' on page 50 undefined on inp
-ut line 3560.
-
-[50] [51] [52]
+[41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52]
 Chapter 10.
-
-LaTeX Warning: Hyper reference `extensions:extensions' on page 53 undefined on 
-input line 3762.
-
-
-LaTeX Warning: Hyper reference `config:html-options' on page 53 undefined on in
-put line 3773.
-
-
-LaTeX Warning: Hyper reference `faq:epub-faq' on page 53 undefined on input lin
-e 3851.
-
 [53
 
-]
-
-LaTeX Warning: Hyper reference `config:latex-options' on page 54 undefined on i
-nput line 3872.
-
-
-LaTeX Warning: Hyper reference `faq:texinfo-faq' on page 54 undefined on input 
-line 3942.
-
-[54]
-
-LaTeX Warning: Hyper reference `builders:serialization-details' on page 55 unde
-fined on input line 4013.
-
-
-LaTeX Warning: Hyper reference `builders:serialization-details' on page 55 unde
-fined on input line 4027.
-
-
-LaTeX Warning: Hyper reference `builders:serialization-details' on page 55 unde
-fined on input line 4044.
-
-[55]
-
-LaTeX Warning: Hyper reference `intl:intl' on page 56 undefined on input line 4
-062.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-versionadded' on page 56 
-undefined on input line 4074.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-versionchanged' on page 5
-6 undefined on input line 4075.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-deprecated' on page 56 un
-defined on input line 4075.
-
-
-LaTeX Warning: Hyper reference `ext/doctest:module-sphinx.ext.doctest' on page 
-56 undefined on input line 4099.
-
-
-LaTeX Warning: Hyper reference `ext/coverage:module-sphinx.ext.coverage' on pag
-e 56 undefined on input line 4102.
-
-
-LaTeX Warning: Hyper reference `builders:sphinx.builders.html.PickleHTMLBuilder
-' on page 56 undefined on input line 4113.
-
-
-LaTeX Warning: Hyper reference `builders:sphinx.builders.html.SerializingHTMLBu
-ilder.out_suffix' on page 56 undefined on input line 4117.
-
-
-LaTeX Warning: Hyper reference `builders:sphinx.builders.html.SerializingHTMLBu
-ilder.globalcontext_filename' on page 56 undefined on input line 4150.
-
+] [54] [55]
 LaTeX Font Info:    Font shape `T1/pcr/bx/it' in size <10> not available
 (Font)              Font shape `T1/pcr/b/it' tried instead on input line 4150.
 LaTeX Font Info:    Font shape `T1/pcr/b/it' in size <10> not available
 (Font)              Font shape `T1/pcr/b/sl' tried instead on input line 4150.
-[56]
-
-LaTeX Warning: Hyper reference `builders:sphinx.builders.html.SerializingHTMLBu
-ilder.searchindex_filename' on page 57 undefined on input line 4171.
-
-[57] [58
+ [56] [57] [58
 
 ]
 Chapter 11.
-
-LaTeX Warning: Hyper reference `glossary:term-configuration-directory' on page 
-59 undefined on input line 4201.
-
-
-LaTeX Warning: Hyper reference `markup/misc:tags' on page 59 undefined on input
- line 4240.
-
-
-LaTeX Warning: Hyper reference `intl:intl' on page 59 undefined on input line 4
-256.
-
 [59] [60]
 Chapter 12.
-
-LaTeX Warning: Hyper reference `config:intl-options' on page 61 undefined on in
-put line 4302.
-
-<translation.png, id=760, 666.49pt x 392.46625pt>
+<translation.png, id=1316, 666.49pt x 392.46625pt>
 File: translation.png Graphic file (type png)
  <use translation.png>
 Package pdftex.def Info: translation.png used on input line 4307.
@@ -1964,11 +1472,6 @@ Package pdftex.def Info: translation.png used on input line 4307.
 [61
 
  <./translation.png>]
-
-LaTeX Warning: Hyper reference `builders:sphinx.builders.gettext.MessageCatalog
-Builder' on page 62 undefined on input line 4331.
-
-
 Underfull \hbox (badness 8000) in paragraph at lines 4352--4355
 []\T1/ptm/m/n/10 Compile your mes-sage cat-a-log to a lo-cale di-rec-tory, say 
 \T1/pcr/m/n/10 translated\T1/ptm/m/n/10 , so it ends up in
@@ -1976,7 +1479,7 @@ Underfull \hbox (badness 8000) in paragraph at lines 4352--4355
 
 [62]
 Chapter 13.
-<default.png, id=778, 223.58531pt x 150.5625pt>
+<default.png, id=1335, 223.58531pt x 150.5625pt>
 File: default.png Graphic file (type png)
  <use default.png>
 Package pdftex.def Info: default.png used on input line 4429.
@@ -1986,7 +1489,7 @@ File: default.png Graphic file (type png)
 <use default.png>
 Package pdftex.def Info: default.png used on input line 4429.
 (pdftex.def)             Requested size: 223.13649pt x 150.26344pt.
- <sphinxdoc.png, id=779, 223.58531pt x 150.5625pt>
+ <sphinxdoc.png, id=1336, 223.58531pt x 150.5625pt>
 File: sphinxdoc.png Graphic file (type png)
 
 <use sphinxdoc.png>
@@ -1997,7 +1500,7 @@ File: sphinxdoc.png Graphic file (type png)
 Package pdftex.def Info: sphinxdoc.png used on input line 4433.
 (pdftex.def)             Requested size: 223.13649pt x 150.26344pt.
 
-<scrolls.png, id=780, 223.58531pt x 150.5625pt>
+<scrolls.png, id=1337, 223.58531pt x 150.5625pt>
 File: scrolls.png Graphic file (type png)
  <use scrolls.png>
 Package pdftex.def Info: scrolls.png used on input line 4438.
@@ -2007,7 +1510,7 @@ File: scrolls.png Graphic file (type png)
 <use scrolls.png>
 Package pdftex.def Info: scrolls.png used on input line 4438.
 (pdftex.def)             Requested size: 223.13649pt x 150.26344pt.
- <agogo.png, id=781, 223.58531pt x 150.5625pt>
+ <agogo.png, id=1338, 223.58531pt x 150.5625pt>
 File: agogo.png Graphic file (type png)
 
 <use agogo.png>
@@ -2018,7 +1521,7 @@ File: agogo.png Graphic file (type png)
 Package pdftex.def Info: agogo.png used on input line 4442.
 (pdftex.def)             Requested size: 223.13649pt x 150.26344pt.
 
-<traditional.png, id=782, 223.58531pt x 150.5625pt>
+<traditional.png, id=1339, 223.58531pt x 150.5625pt>
 File: traditional.png Graphic file (type png)
  <use traditional.png>
 Package pdftex.def Info: traditional.png used on input line 4447.
@@ -2028,7 +1531,7 @@ File: traditional.png Graphic file (type png)
 <use traditional.png>
 Package pdftex.def Info: traditional.png used on input line 4447.
 (pdftex.def)             Requested size: 223.13649pt x 150.26344pt.
- <nature.png, id=783, 298.11375pt x 200.75pt>
+ <nature.png, id=1340, 298.11375pt x 200.75pt>
 File: nature.png Graphic file (type png)
 
 <use nature.png>
@@ -2038,7 +1541,7 @@ File: nature.png Graphic file (type png)
  <use nature.png>
 Package pdftex.def Info: nature.png used on input line 4451.
 (pdftex.def)             Requested size: 223.13649pt x 150.26192pt.
- <haiku.png, id=784, 298.11375pt x 200.75pt>
+ <haiku.png, id=1341, 298.11375pt x 200.75pt>
 File: haiku.png Graphic file (type png)
 
 <use haiku.png>
@@ -2049,7 +1552,7 @@ File: haiku.png Graphic file (type png)
 Package pdftex.def Info: haiku.png used on input line 4456.
 (pdftex.def)             Requested size: 223.13649pt x 150.26192pt.
 
-<pyramid.png, id=785, 208.3902pt x 137.65715pt>
+<pyramid.png, id=1342, 208.3902pt x 137.65715pt>
 File: pyramid.png Graphic file (type png)
  <use pyramid.png>
 Package pdftex.def Info: pyramid.png used on input line 4460.
@@ -2072,47 +1575,11 @@ Overfull \vbox (57.32272pt too high) has occurred while \output is active []
 
 [65 <./default.png (PNG copy)> <./sphinxdoc.png (PNG copy)> <./scrolls.png (PNG
  copy)> <./agogo.png (PNG copy)> <./traditional.png (PNG copy)> <./nature.png> 
-<./haiku.png> <./pyramid.png>] [66] [67]
-
-LaTeX Warning: Hyper reference `templating::doc' on page 68 undefined on input 
-line 4752.
-
-[68] [69] [70
+<./haiku.png> <./pyramid.png>] [66] [67] [68] [69] [70
 
 ]
 Chapter 14.
-
-LaTeX Warning: Hyper reference `ext/builderapi:writing-builders' on page 71 und
-efined on input line 4807.
-
-
-LaTeX Warning: Hyper reference `builders:sphinx.builders.html.StandaloneHTMLBui
-lder' on page 71 undefined on input line 4808.
-
-
-LaTeX Warning: Hyper reference `builders:sphinx.builders.html.PickleHTMLBuilder
-' on page 71 undefined on input line 4812.
-
-[71]
-
-LaTeX Warning: Hyper reference `templating:reldelim1' on page 72 undefined on i
-nput line 4907.
-
-[72]
-
-LaTeX Warning: Hyper reference `templating:script_files' on page 73 undefined o
-n input line 5014.
-
-[73]
-
-LaTeX Warning: Hyper reference `builders:sphinx.builders.html.SerializingHTMLBu
-ilder.out_suffix' on page 74 undefined on input line 5119.
-
-
-LaTeX Warning: Hyper reference `templating:pathto' on page 74 undefined on inpu
-t line 5154.
-
-
+[71] [72] [73]
 Underfull \hbox (badness 5417) in paragraph at lines 5178--5181
 \T1/ptm/m/n/10 The ``page name'' of the cur-rent file, i.e. ei-ther the doc-u-m
 ent name if the file is gen-er-
@@ -2124,453 +1591,42 @@ Underfull \hbox (badness 5105) in paragraph at lines 5178--5181
 me rel-a-tive to the out-put di-rec-tory
  []
 
-
-LaTeX Warning: Hyper reference `templating:next' on page 74 undefined on input 
-line 5188.
-
-
-LaTeX Warning: Hyper reference `templating:next' on page 74 undefined on input 
-line 5197.
-
-[74]
-
-LaTeX Warning: Hyper reference `markup/misc:metadata' on page 75 undefined on i
-nput line 5297.
-
-[75] [76
+[74] [75] [76
 
 ]
 Chapter 15.
-
-LaTeX Warning: Hyper reference `glossary:term-builder' on page 77 undefined on 
-input line 5350.
-
 [77] [78]
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_config
-_value' on page 79 undefined on input line 5503.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 5503--5506
-[]\T1/pcr/m/sl/10 add_config_value() \T1/ptm/m/n/10 lets Sphinx know that it sh
-ould rec-og-nize the new \T1/ptm/m/it/10 con-fig value
+[][][]\T1/pcr/m/sl/10 add_config_value()[][] \T1/ptm/m/n/10 lets Sphinx know th
+at it should rec-og-nize the new \T1/ptm/m/it/10 con-fig value
  []
 
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_node' 
-on page 79 undefined on input line 5512.
-
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_direct
-ive' on page 79 undefined on input line 5520.
-
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.connect' o
-n page 79 undefined on input line 5525.
-
-[79] [80] [81]
-
-LaTeX Warning: Hyper reference `ext/builderapi:sphinx.builders.Builder' on page
- 82 undefined on input line 5762.
-
-[82]
-
-LaTeX Warning: Hyper reference `markup/code:directive-literalinclude' on page 8
-3 undefined on input line 5896.
-
-[83]
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_direct
-ive' on page 84 undefined on input line 5916.
-
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_role' 
-on page 84 undefined on input line 5936.
-
-
+[79] [80] [81] [82] [83]
 Underfull \hbox (badness 10000) in paragraph at lines 5956--5956
 []\T1/ptm/m/it/10 directivename\T1/ptm/m/n/10 , \T1/ptm/m/it/10 role-name\T1/pt
 m/m/n/10 , \T1/ptm/m/it/10 in-dex-tem-plate='`\T1/ptm/m/n/10 , \T1/ptm/m/it/10 
 parse_node=None\T1/ptm/m/n/10 ,
  []
 
-
-LaTeX Warning: Hyper reference `glossary:term-object' on page 84 undefined on i
-nput line 5957.
-
-[84]
-
-LaTeX Warning: Hyper reference `markup/inline:xref-syntax' on page 85 undefined
- on input line 6014.
-
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_object
-_type' on page 85 undefined on input line 6025.
-
-
-LaTeX Warning: Hyper reference `markup/inline:role-ref' on page 85 undefined on
- input line 6029.
-
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_javasc
-ript' on page 85 undefined on input line 6081.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:module-sphinx.ext.autodoc' on page 
-85 undefined on input line 6103.
-
-[85]
-
-LaTeX Warning: Hyper reference `ext/appapi:events' on page 86 undefined on inpu
-t line 6144.
-
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.disconnect
-' on page 86 undefined on input line 6147.
-
-[86]
+[84] [85] [86]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 6239.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:module' on page 87 undefin
-ed on input line 6260.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:class' on page 87 undefine
-d on input line 6260.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:module' on page 87 undefin
-ed on input line 6262.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:class' on page 87 undefine
-d on input line 6263.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:class' on page 87 undefine
-d on input line 6266.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:module' on page 87 undefin
-ed on input line 6266.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-autoclass' on page 87 und
-efined on input line 6267.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-automethod' on page 87 un
-defined on input line 6267.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:class' on page 87 undefine
-d on input line 6268.
-
-[87] [88]
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-automodule' on page 89 un
-defined on input line 6407.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-autoclass' on page 89 und
-efined on input line 6407.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-autoexception' on page 89
- undefined on input line 6408.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-automodule' on page 89 un
-defined on input line 6410.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:function' on page 89 undef
-ined on input line 6417.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-automodule' on page 89 un
-defined on input line 6424.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:module' on page 89 undefin
-ed on input line 6425.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-automodule' on page 89 un
-defined on input line 6431.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-autoclass' on page 89 und
-efined on input line 6431.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-automodule' on page 89 un
-defined on input line 6447.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-autoclass' on page 89 und
-efined on input line 6459.
-
-[89]
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-autodata' on page 90 unde
-fined on input line 6492.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:directive-autoattribute' on page 90
- undefined on input line 6492.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:module-sphinx.ext.autodoc' on page 
-90 undefined on input line 6517.
-
-[90]
-
-LaTeX Warning: Hyper reference `ext/autosummary:module-sphinx.ext.autosummary' 
-on page 91 undefined on input line 6536.
-
-
-LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
-91 undefined on input line 6539.
-
-
-LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
-91 undefined on input line 6546.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:module-sphinx.ext.autodoc' on page 
-91 undefined on input line 6547.
-
-
-LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
-91 undefined on input line 6558.
-
-
-LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 91 un
-defined on input line 6559.
-
-
-LaTeX Warning: Hyper reference `ext/autodoc:module-sphinx.ext.autodoc' on page 
-91 undefined on input line 6579.
-
-
-LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
-91 undefined on input line 6584.
-
-
-LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 91 un
-defined on input line 6584.
-
-
-LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
-91 undefined on input line 6603.
-
-[91]
-
-LaTeX Warning: Hyper reference `ext/autosummary:customizing-templates' on page 
-92 undefined on input line 6627.
-
-
-LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
-92 undefined on input line 6640.
-
-
-LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
-92 undefined on input line 6648.
-
-
-LaTeX Warning: Hyper reference `templating:templating' on page 92 undefined on 
-input line 6675.
-
-[92]
-
-LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
-93 undefined on input line 6813.
-
-[93] [94]
-
-LaTeX Warning: Hyper reference `ext/doctest:directive-testcode' on page 95 unde
-fined on input line 6961.
-
-
-LaTeX Warning: Hyper reference `ext/doctest:directive-doctest' on page 95 undef
-ined on input line 6993.
-
-
-LaTeX Warning: Hyper reference `ext/doctest:directive-testcode' on page 95 unde
-fined on input line 6993.
-
-
-LaTeX Warning: Hyper reference `ext/doctest:directive-testoutput' on page 95 un
-defined on input line 6993.
-
-[95]
-
-LaTeX Warning: Hyper reference `ext/math:module-sphinx.ext.mathbase' on page 96
- undefined on input line 7081.
-
-
-LaTeX Warning: Hyper reference `ext/math:module-sphinx.ext.mathbase' on page 96
- undefined on input line 7085.
-
-
-LaTeX Warning: Hyper reference `ext/math:module-sphinx.ext.pngmath' on page 96 
-undefined on input line 7086.
-
-
-LaTeX Warning: Hyper reference `ext/math:module-sphinx.ext.mathjax' on page 96 
-undefined on input line 7087.
-
-
-LaTeX Warning: Hyper reference `ext/math:module-sphinx.ext.mathbase' on page 96
- undefined on input line 7094.
-
-[96] [97]
-
-LaTeX Warning: Hyper reference `ext/graphviz:directive-graphviz' on page 98 und
-efined on input line 7242.
-
-[98]
-
-LaTeX Warning: Hyper reference `ext/graphviz:module-sphinx.ext.graphviz' on pag
-e 99 undefined on input line 7313.
-
-
-LaTeX Warning: Hyper reference `domains:directive-py:module' on page 99 undefin
-ed on input line 7322.
-
+ [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98]
 [99]
-
-LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_config
-_value' on page 100 undefined on input line 7371.
-
-
-LaTeX Warning: Hyper reference `ext/coverage:sphinx.ext.coverage.CoverageBuilde
-r' on page 100 undefined on input line 7389.
-
-
-LaTeX Warning: Hyper reference `markup/para:directive-note' on page 100 undefin
-ed on input line 7413.
-
-
-LaTeX Warning: Hyper reference `ext/extlinks:module-sphinx.ext.extlinks' on pag
-e 100 undefined on input line 7444.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 7442--7446
 []\T1/ptm/m/n/10 Let's as-sume that you want to in-clude many links to is-sues 
 at the Sphinx tracker, at
  []
 
-[100]
-
-LaTeX Warning: Hyper reference `domains:c-domain' on page 101 undefined on inpu
-t line 7479.
-
-[101] [102]
+[100] [101] [102]
 Chapter 16.
-
-LaTeX Warning: Hyper reference `web/quickstart:websupportquickstart' on page 10
-3 undefined on input line 7560.
-
-
-LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
-03 undefined on input line 7572.
-
-
-LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
-03 undefined on input line 7593.
-
-
-LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
-03 undefined on input line 7600.
-
 [103
 
-]
-
-LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
-04 undefined on input line 7679.
-
-[104] [105]
-
-LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
-06 undefined on input line 7835.
-
-[106]
-
-LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
-07 undefined on input line 7864.
-
-
-LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
-07 undefined on input line 7869.
-
-
-LaTeX Warning: Hyper reference `web/searchadapters:sphinx.websupport.search.Bas
-eSearch' on page 107 undefined on input line 7874.
-
-
-LaTeX Warning: Hyper reference `web/storagebackends:sphinx.websupport.storage.S
-torageBackend' on page 107 undefined on input line 7878.
-
-
-LaTeX Warning: Hyper reference `web/searchadapters:sphinx.websupport.search.Bas
-eSearch' on page 107 undefined on input line 7907.
-
-
-LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
-07 undefined on input line 7908.
-
-
-LaTeX Warning: Hyper reference `web/searchadapters:sphinx.websupport.search.Bas
-eSearch' on page 107 undefined on input line 7918.
-
-[107]
-
-LaTeX Warning: Hyper reference `web/storagebackends:sphinx.websupport.storage.S
-torageBackend' on page 108 undefined on input line 7942.
-
-
-LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
-08 undefined on input line 7944.
-
-
-LaTeX Warning: Hyper reference `web/storagebackends:sphinx.websupport.storage.S
-torageBackend' on page 108 undefined on input line 7953.
-
-[108]
+] [104] [105] [106] [107] [108]
 Chapter 17.
-
-LaTeX Warning: Hyper reference `builders:builders' on page 109 undefined on inp
-ut line 7977.
-
-
-LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 109 u
-ndefined on input line 7982.
-
-
-LaTeX Warning: Hyper reference `theming::doc' on page 109 undefined on input li
-ne 7985.
-
-
-LaTeX Warning: Hyper reference `templating:toctree' on page 109 undefined on in
-put line 7991.
-
-
-LaTeX Warning: Hyper reference `ext/tutorial:exttut' on page 109 undefined on i
-nput line 7995.
-
 [109
 
 ] [110]
-
-LaTeX Warning: Hyper reference `faq:texinfo-links' on page 111 undefined on inp
-ut line 8149.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 8152--8159
 []\T1/ptm/m/n/10 The ex-act be-hav-ior of how Emacs dis-plays ref-er-ences is d
 e-pen-dent on the vari-able
@@ -2584,200 +1640,15 @@ s-ing the value \T1/pcr/m/n/10 hide \T1/ptm/m/n/10 for
 
 [111] [112]
 Chapter 18.
-
-LaTeX Warning: Hyper reference `ext/builderapi:sphinx.builders.Builder' on page
- 113 undefined on input line 8246.
-
-
-LaTeX Warning: Hyper reference `builders:builders' on page 113 undefined on inp
-ut line 8252.
-
-
-LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 113 und
-efined on input line 8256.
-
-
-LaTeX Warning: Hyper reference `rest:directives' on page 113 undefined on input
- line 8272.
-
-
-LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 113 und
-efined on input line 8279.
-
-
-LaTeX Warning: Hyper reference `glossary:term-directive' on page 113 undefined 
-on input line 8288.
-
-
-LaTeX Warning: Hyper reference `glossary:term-role' on page 113 undefined on in
-put line 8289.
-
-
-LaTeX Warning: Hyper reference `glossary:term-object' on page 113 undefined on 
-input line 8289.
-
-
-LaTeX Warning: Hyper reference `domains:domains' on page 113 undefined on input
- line 8297.
-
-
-LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 113 u
-ndefined on input line 8306.
-
-
-LaTeX Warning: Hyper reference `domains:directive-object' on page 113 undefined
- on input line 8310.
-
-
-LaTeX Warning: Hyper reference `rest:inlinemarkup' on page 113 undefined on inp
-ut line 8316.
-
 [113
 
 ] [114]
 Chapter 19.
-
-LaTeX Warning: Hyper reference `glossary:glossary' on page 115 undefined on inp
-ut line 8337.
-
 [115
 
 ] [116
 
-]
-
-LaTeX Warning: Reference `config:module-conf' on page 117 undefined on input li
-ne 8346.
-
-
-LaTeX Warning: Reference `extensions:module-sphinx.application' on page 117 und
-efined on input line 8349.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders' on page 117 undefine
-d on input line 8350.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.changes' on page 117 
-undefined on input line 8351.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.devhelp' on page 117 
-undefined on input line 8352.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.epub' on page 117 und
-efined on input line 8353.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.gettext' on page 117 
-undefined on input line 8354.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.html' on page 117 und
-efined on input line 8355.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.htmlhelp' on page 117
- undefined on input line 8356.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.latex' on page 117 un
-defined on input line 8357.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.linkcheck' on page 11
-7 undefined on input line 8358.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.manpage' on page 117 
-undefined on input line 8359.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.qthelp' on page 117 u
-ndefined on input line 8360.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.texinfo' on page 117 
-undefined on input line 8361.
-
-
-LaTeX Warning: Reference `builders:module-sphinx.builders.text' on page 117 und
-efined on input line 8362.
-
-
-LaTeX Warning: Reference `ext/appapi:module-sphinx.domains' on page 117 undefin
-ed on input line 8363.
-
-
-LaTeX Warning: Reference `ext/autodoc:module-sphinx.ext.autodoc' on page 117 un
-defined on input line 8364.
-
-
-LaTeX Warning: Reference `ext/autosummary:module-sphinx.ext.autosummary' on pag
-e 117 undefined on input line 8365.
-
-
-LaTeX Warning: Reference `ext/coverage:module-sphinx.ext.coverage' on page 117 
-undefined on input line 8366.
-
-
-LaTeX Warning: Reference `ext/doctest:module-sphinx.ext.doctest' on page 117 un
-defined on input line 8367.
-
-
-LaTeX Warning: Reference `ext/extlinks:module-sphinx.ext.extlinks' on page 117 
-undefined on input line 8368.
-
-
-LaTeX Warning: Reference `ext/graphviz:module-sphinx.ext.graphviz' on page 117 
-undefined on input line 8369.
-
-
-LaTeX Warning: Reference `ext/ifconfig:module-sphinx.ext.ifconfig' on page 117 
-undefined on input line 8370.
-
-
-LaTeX Warning: Reference `ext/inheritance:module-sphinx.ext.inheritance_diagram
-' on page 117 undefined on input line 8371.
-
-
-LaTeX Warning: Reference `ext/intersphinx:module-sphinx.ext.intersphinx' on pag
-e 117 undefined on input line 8372.
-
-
-LaTeX Warning: Reference `ext/math:module-sphinx.ext.jsmath' on page 117 undefi
-ned on input line 8373.
-
-
-LaTeX Warning: Reference `ext/math:module-sphinx.ext.mathbase' on page 117 unde
-fined on input line 8374.
-
-
-LaTeX Warning: Reference `ext/math:module-sphinx.ext.mathjax' on page 117 undef
-ined on input line 8375.
-
-
-LaTeX Warning: Reference `ext/oldcmarkup:module-sphinx.ext.oldcmarkup' on page 
-117 undefined on input line 8376.
-
-
-LaTeX Warning: Reference `ext/math:module-sphinx.ext.pngmath' on page 117 undef
-ined on input line 8377.
-
-
-LaTeX Warning: Reference `ext/refcounting:module-sphinx.ext.refcounting' on pag
-e 117 undefined on input line 8378.
-
-
-LaTeX Warning: Reference `ext/todo:module-sphinx.ext.todo' on page 117 undefine
-d on input line 8379.
-
-
-LaTeX Warning: Reference `ext/viewcode:module-sphinx.ext.viewcode' on page 117 
-undefined on input line 8380.
-
-[117
+] [117
 
 
 ]
@@ -2788,15 +1659,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 8385.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8385.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8385.
 
+Package rerunfilecheck Info: File `sphinx.out' has not changed.
+(rerunfilecheck)             Checksum: 281F8FA295E8C33E67C133E1DF2DE954;12176.
 
-
-Package rerunfilecheck Warning: File `sphinx.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `sphinx.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  281F8FA295E8C33E67C133E1DF2DE954;12176.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2804,18 +1669,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8385.
  ) 
 Here is how much of TeX's memory you used:
- 18285 strings out of 494497
- 256409 string characters out of 6172400
- 312709 words of memory out of 5000000
- 20158 multiletter control sequences out of 15000+600000
+ 18386 strings out of 494497
+ 257962 string characters out of 6172400
+ 343919 words of memory out of 5000000
+ 20255 multiletter control sequences out of 15000+600000
  160803 words of font info for 366 fonts, out of 8000000 for 9000
  265 hyphenation exceptions out of 8191
- 39i,13n,49p,539b,2599s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,13n,51p,539b,2575s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/
 fonts/type1/arphic/gbsnu/gbsnu30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
 /gbsnu4e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share
@@ -2879,10 +1744,10 @@ texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on sphinx.pdf (121 pages, 1396315 bytes).
+Output written on sphinx.pdf (123 pages, 1423593 bytes).
 PDF statistics:
- 1645 PDF objects out of 1728 (max. 8388607)
- 1326 compressed objects within 14 object streams
- 597 named destinations out of 1000 (max. 500000)
- 375 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2316 PDF objects out of 2487 (max. 8388607)
+ 1989 compressed objects within 20 object streams
+ 599 named destinations out of 1000 (max. 500000)
+ 1143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

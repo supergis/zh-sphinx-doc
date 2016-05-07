@@ -4,9 +4,13 @@
 
 import sys, os
 project = u'Sphinx 使用手册'
-copyright = u''
+#copyright = u''
 version = u''
 release = u''
+
+copyright = '2016,GPL. Add PDF and Simple Chinese support by supergis.'
+author = 'supergis'
+
 
 source_suffix = '.rst'
 
@@ -58,6 +62,7 @@ context = {
 
 html_context = context
 
+###########################################################################
 # Follow added by supergis,to support PDF output and chinese character.
 # -- Options for LaTeX output ---------------------------------------------
 

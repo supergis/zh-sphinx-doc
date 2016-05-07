@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.30)  7 MAY 2016 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.30)  7 MAY 2016 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -937,36 +937,195 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )))
+Package hyperref Info: Option `unicode' set `true' on input line 29.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+! You can't use `macro parameter character #' in vertical mode.
+l.30 #
+      \usepackage{CJKutf8}
+? 
+(/usr/share/texmf/tex/latex/CJK/CJKutf8.sty
+Package: CJKutf8 2015/04/18 4.8.4
+
+(/usr/share/texmf/tex/latex/CJK/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+
+(/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+)
+(/usr/share/texmf/tex/latex/CJK/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box42
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+))
 \@indexfile=\write5
 \openout5 = `sphinx.idx'.
 
 
 Writing index file sphinx.idx
-No file sphinx.aux.
+(./sphinx.aux)
 \openout1 = `sphinx.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 136.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 136.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 141.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 141.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 136.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 141.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -975,7 +1134,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count124
 \scratchdimen=\dimen141
-\scratchbox=\box42
+\scratchbox=\box43
 \nofMPsegments=\count125
 \nofMParguments=\count126
 \everyMPshowfont=\toks30
@@ -999,8 +1158,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring ON on input line 136.
+\AtBeginShipoutBox=\box44
+Package hyperref Info: Link coloring ON on input line 141.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1010,180 +1169,61 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 136.
-LaTeX Info: Redefining \pageref on input line 136.
-LaTeX Info: Redefining \nameref on input line 136.
+LaTeX Info: Redefining \ref on input line 141.
+LaTeX Info: Redefining \pageref on input line 141.
+LaTeX Info: Redefining \nameref on input line 141.
+
+(./sphinx.out) (./sphinx.out)
 \@outlinefile=\write6
 \openout6 = `sphinx.out'.
 
-
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                     \endgroup 
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                     \endgroup 
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                     \endgroup 
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                    #4  \errhelp \@err@     ...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \let \@err@               ...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                  \@empty \def \MessageBreak...
-l.139 \tableofcontents
-                      
-? 
-! Undefined control sequence.
-\GenericError  ...                                
-                                                     \endgroup 
-l.139 \tableofcontents
-                      
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
+ (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+phv on input line 139.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 144.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 139.
-
-
-! Package inputenc Error: Unicode char 使 (U+4F7F)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.139 \tableofcontents
-                      
-? 
-
-! Package inputenc Error: Unicode char 用 (U+7528)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.139 \tableofcontents
-                      
-? 
-
-! Package inputenc Error: Unicode char 手 (U+624B)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.139 \tableofcontents
-                      
-? 
-
-! Package inputenc Error: Unicode char 册 (U+518C)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.139 \tableofcontents
-                      
-? 
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 144.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <17.28> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 139.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 144.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 139.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 144.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 139.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 144.
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 144
+.
+
+(/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fd
+File: c70gbsn.fd 2008/10/03 4.8.1
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fdx
+File: c70gbsn.fdx 2012/05/07 4.8.3
+)
+
+LaTeX Font Warning: Font shape `C70/gbsn/bx/it' undefined
+(Font)              using `C70/gbsn/bx/n' instead on input line 144.
+
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 139.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 144.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 139.
+LaTeX Font Info:    Try loading font information for U+msa on input line 144.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 139.
+LaTeX Font Info:    Try loading font information for U+msb on input line 144.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1192,561 +1232,1657 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write7
 \openout7 = `sphinx.toc'.
 
-
 Adding blank page after the table of contents.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 139.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 144.
 [1
 
 ] [2]
-
-! Package inputenc Error: Unicode char 使 (U+4F7F)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 sphinx使
-               用手册,源文档地址 \href{http://sphinx.pocoo.org/}{Sph...
-
-? 
-
-! Package inputenc Error: Unicode char 用 (U+7528)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 sphinx使用
-                  手册,源文档地址 \href{http://sphinx.pocoo.org/}{Sph...
-
-? 
-
-! Package inputenc Error: Unicode char 手 (U+624B)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 sphinx使用手
-                     册,源文档地址 \href{http://sphinx.pocoo.org/}{Sph...
-
-? 
-
-! Package inputenc Error: Unicode char 册 (U+518C)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 sphinx使用手册
-                        ,源文档地址 \href{http://sphinx.pocoo.org/}{Sph...
-
-? 
-
-! Package inputenc Error: Unicode char 源 (U+6E90)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 sphinx使用手册,源
-                            文档地址 \href{http://sphinx.pocoo.org/}{Sph...
-
-? 
-
-! Package inputenc Error: Unicode char 文 (U+6587)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 sphinx使用手册,源文
-                               档地址 \href{http://sphinx.pocoo.org/}{Sph...
-
-? 
-
-! Package inputenc Error: Unicode char 档 (U+6863)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 sphinx使用手册,源文档
-                                  地址 \href{http://sphinx.pocoo.org/}{Sph...
-
-? 
-
-! Package inputenc Error: Unicode char 地 (U+5730)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 sphinx使用手册,源文档地
-                                     址 \href{http://sphinx.pocoo.org/}{Sph...
-
-? 
-
-! Package inputenc Error: Unicode char 址 (U+5740)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 sphinx使用手册,源文档地址
-                                         \href{http://sphinx.pocoo.org/}{Sph...
-
-? 
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 149.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 146.
-
-! Package inputenc Error: Unicode char 用 (U+7528)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 \textbf{用户评价:}
-                            
-? 
-
-! Package inputenc Error: Unicode char 户 (U+6237)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 \textbf{用户评价:}
-                            
-? 
-
-! Package inputenc Error: Unicode char 评 (U+8BC4)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 \textbf{用户评价:}
-                            
-? 
-
-! Package inputenc Error: Unicode char 价 (U+4EF7)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 \textbf{用户评价:}
-                            
-? 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 147.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 154.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 155.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
+) [1
 
-! Package inputenc Error: Unicode char 值 (U+503C)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 得 (U+5F97)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 欢 (U+6B22)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 呼 (U+547C)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 的 (U+7684)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 好 (U+597D)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 工 (U+5DE5)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 具 (U+5177)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char ， (U+FF0C)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 确 (U+786E)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 实 (U+5B9E)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 方 (U+65B9)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 便 (U+4FBF)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 那 (U+90A3)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 些 (U+4E9B)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 需 (U+9700)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 要 (U+8981)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 书 (U+4E66)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 写 (U+5199)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 文 (U+6587)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 档 (U+6863)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 的 (U+7684)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 程 (U+7A0B)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 序 (U+5E8F)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 员 (U+5458)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 们 (U+4EEC)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 ...那些需要书写文档的程序员们!}
-                                                  
-? 
-
-! Package inputenc Error: Unicode char 使 (U+4F7F)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 \chapter
-              {欢迎}
-? 
-
-! Package inputenc Error: Unicode char 用 (U+7528)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 \chapter
-              {欢迎}
-? 
-
-! Package inputenc Error: Unicode char 手 (U+624B)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 \chapter
-              {欢迎}
-? 
-
-! Package inputenc Error: Unicode char 册 (U+518C)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 \chapter
-              {欢迎}
-? 
-[1
 
 ]
 
-! Package inputenc Error: Unicode char 使 (U+4F7F)
-(inputenc)                not set up for use with LaTeX.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.08115pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 \chapter
-              {欢迎}
-? 
-
-! Package inputenc Error: Unicode char 用 (U+7528)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 \chapter
-              {欢迎}
-? 
-
-! Package inputenc Error: Unicode char 手 (U+624B)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 \chapter
-              {欢迎}
-? 
-
-! Package inputenc Error: Unicode char 册 (U+518C)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 \chapter
-              {欢迎}
-? 
 [2
 
 ]
-Chapter 1.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 151.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 151.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 151.
+Chapter 2.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 168.
 
-! Package inputenc Error: Unicode char 欢 (U+6B22)
-(inputenc)                not set up for use w
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+
+LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
+(Font)              using `C70/gbsn/m/n' instead on input line 169.
+
+[3] [4
+
+]
+Chapter 3.
+
+LaTeX Warning: Hyper reference `faq:usingwith' on page 5 undefined on input lin
+e 234.
+
+
+LaTeX Warning: Hyper reference `tutorial::doc' on page 5 undefined on input lin
+e 248.
+
+[5] [6]
+Chapter 4.
+
+LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 7 undef
+ined on input line 260.
+
+
+LaTeX Warning: Hyper reference `glossary:term-configuration-directory' on page 
+7 undefined on input line 262.
+
+
+LaTeX Warning: Hyper reference `invocation:invocation' on page 7 undefined on i
+nput line 262.
+
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 264.
+
+LaTeX Warning: Hyper reference `invocation:invocation-apidoc' on page 7 undefin
+ed on input line 273.
+
+
+LaTeX Warning: Hyper reference `glossary:term-master-document' on page 7 undefi
+ned on input line 279.
+
+
+Overfull \hbox (14.79999pt too wide) in paragraph at lines 300--300
+ [] 
+ []
+
+[7
+
+]
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 305.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 317.
+
+
+LaTeX Warning: Hyper reference `glossary:term-document-name' on page 8 undefine
+d on input line 320.
+
+<more.png, id=226, 32.12pt x 32.12pt>
+File: more.png Graphic file (type png)
+ <use more.png>
+Package pdftex.def Info: more.png used on input line 323.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+File: more.png Graphic file (type png)
+ <use more.png>
+Package pdftex.def Info: more.png used on input line 323.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+
+
+LaTeX Warning: Hyper reference `markup/toctree:toctree-directive' on page 8 und
+efined on input line 323.
+
+
+LaTeX Warning: Hyper reference `markup/inline:role-ref' on page 8 undefined on 
+input line 333.
+
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 333.
+File: more.png Graphic file (type png)
+<use more.png>
+Package pdftex.def Info: more.png used on input line 337.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+File: more.png Graphic file (type png)
+ <use more.png>
+Package pdftex.def Info: more.png used on input line 337.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+
+
+LaTeX Warning: Hyper reference `rest:rst-primer' on page 8 undefined on input l
+ine 337.
+
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 337.
+
+LaTeX Warning: Hyper reference `markup/index:sphinxmarkup' on page 8 undefined 
+on input line 338.
+
+
+LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 8 undef
+ined on input line 352.
+
+File: more.png Graphic file (type png)
+<use more.png>
+Package pdftex.def Info: more.png used on input line 354.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+File: more.png Graphic file (type png)
+ <use more.png>
+Package pdftex.def Info: more.png used on input line 354.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+
+
+LaTeX Warning: Hyper reference `invocation:invocation' on page 8 undefined on i
+nput line 354.
+
+
+LaTeX Warning: Hyper reference `builders:sphinx.builders.latex.LaTeXBuilder' on
+ page 8 undefined on input line 370.
+
+[8 <./more.png>]
+
+LaTeX Warning: Hyper reference `domains:directive-py:class' on page 9 undefined
+ on input line 409.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:method' on page 9 undefine
+d on input line 409.
+
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 413.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+
+LaTeX Warning: Hyper reference `tutorial:enumerate' on page 9 undefined on inpu
+t line 416.
+
+File: more.png Graphic file (type png)
+<use more.png>
+Package pdftex.def Info: more.png used on input line 423.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+File: more.png Graphic file (type png)
+ <use more.png>
+Package pdftex.def Info: more.png used on input line 423.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+
+
+LaTeX Warning: Hyper reference `domains:domains' on page 9 undefined on input l
+ine 423.
+
+File: more.png Graphic file (type png)
+<use more.png>
+Package pdftex.def Info: more.png used on input line 439.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+File: more.png Graphic file (type png)
+ <use more.png>
+Package pdftex.def Info: more.png used on input line 439.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+
+
+LaTeX Warning: Hyper reference `config:build-config' on page 9 undefined on inp
+ut line 439.
+
+[9]
+File: more.png Graphic file (type png)
+ <use more.png>
+Package pdftex.def Info: more.png used on input line 466.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+File: more.png Graphic file (type png)
+ <use more.png>
+Package pdftex.def Info: more.png used on input line 466.
+(pdftex.def)             Requested size: 32.1199pt x 32.1199pt.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:module-sphinx.ext.autodoc' on page 
+10 undefined on input line 466.
+
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 490.
+[10]
+Chapter 5.
+
+LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 11 unde
+fined on input line 502.
+
+
+LaTeX Warning: Hyper reference `ext/doctest:module-sphinx.ext.doctest' on page 
+11 undefined on input line 539.
+
+
+LaTeX Warning: Hyper reference `builders:builders' on page 11 undefined on inpu
+t line 546.
+
+
+LaTeX Warning: Hyper reference `glossary:term-environment' on page 11 undefined
+ on input line 563.
+
+
+LaTeX Warning: Hyper reference `markup/misc:directive-only' on page 11 undefine
+d on input line 572.
+
+[11
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 614--617
+\C70/gbsn/m/it/10/89 � \C70/gbsn/bx/n/10/76 � \T1/pcr/m/n/10 conf.py \C70/gbsn/
+m/n/10/91 � \C70/gbsn/bx/n/10/76 � \C70/gbsn/m/n/10/91 M \C70/gbsn/bx/n/10/7f n
+ \C70/gbsn/m/n/10/50 <\T1/ptm/m/n/10 . value \C70/gbsn/m/it/10/66 / \C70/gbsn/b
+x/it/10/4e ^^@ * \C70/gbsn/bx/n/10/5b W \C70/gbsn/bx/it/10/7b & \C70/gbsn/bx/it
+/10/4e 2 \C70/gbsn/m/it/10/62 ^^V \C70/gbsn/bx/n/10/5b W \C70/gbsn/bx/n/10/51 x
+\T1/ptm/m/n/10 . \C70/gbsn/m/n/10/4f � \C70/gbsn/m/it/10/59 �\T1/ptm/m/n/10 : \
+T1/pcr/m/n/10 -D
+ []
+
+
+LaTeX Warning: Hyper reference `invocation:cmdoption-sphinx-build-b' on page 12
+ undefined on input line 696.
+
+
+LaTeX Warning: Hyper reference `invocation:cmdoption-sphinx-build-d' on page 12
+ undefined on input line 696.
+
+[12] [13] [14
+
+]
+Chapter 6.
+
+LaTeX Warning: Hyper reference `invocation:cmdoption-sphinx-apidoc--full' on pa
+ge 15 undefined on input line 788.
+
+[15] [16
+
+]
+Chapter 7.
+[17]
+
+LaTeX Warning: Hyper reference `markup/inline:inline-markup' on page 18 undefin
+ed on input line 912.
+
+[18]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1050.
+ [19]
+
+LaTeX Warning: Hyper reference `markup/inline:ref-role' on page 20 undefined on
+ input line 1067.
+
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1119.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1119.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1119.
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 1122--1126
+[]\C70/gbsn/m/it/10/8b f \C70/gbsn/bx/n/10/54 J\T1/ptm/m/n/10 : []\T1/ptm/b/n/1
+0 :dudir:`attention`[]\T1/ptm/m/n/10 , []\T1/ptm/b/n/10 :dudir:`caution`[]\T1/p
+tm/m/n/10 , []\T1/ptm/b/n/10 :dudir:`danger`[]\T1/ptm/m/n/10 , []\T1/ptm/b/n/10
+ :dudir:`error`[]\T1/ptm/m/n/10 , []\T1/ptm/b/n/10 :dudir:`hint`[]\T1/ptm/m/n/1
+0 ,
+ []
+
+
+LaTeX Warning: Hyper reference `rest:id129' on page 21 undefined on input line 
+1131.
+
+
+LaTeX Warning: Hyper reference `markup/index:sphinxmarkup' on page 21 undefined
+ on input line 1228.
+
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1230.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1230.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1230.
+[21] [22]
+
+LaTeX Warning: Hyper reference `markup/inline:default-substitutions' on page 23
+ undefined on input line 1334.
+
+[23] [24]
+Chapter 8.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1400.
+
+LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 25 un
+defined on input line 1429.
+
+
+LaTeX Warning: Hyper reference `markup/inline:xref-syntax' on page 25 undefined
+ on input line 1430.
+
+[25
+
+]
+
+LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 26 unde
+fined on input line 1504.
+
+[26]
+
+LaTeX Warning: Hyper reference `domains:basic-domain-markup' on page 27 undefin
+ed on input line 1535.
+
+
+LaTeX Warning: Hyper reference `markup/misc:directive-index' on page 27 undefin
+ed on input line 1535.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:module' on page 27 undefin
+ed on input line 1538.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-note' on page 27 undefine
+d on input line 1577.
+
+[27]
+
+LaTeX Warning: Hyper reference `markup/para:directive-versionadded' on page 28 
+undefined on input line 1604.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-versionchanged' on page 2
+8 undefined on input line 1612.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-seealso' on page 28 undef
+ined on input line 1629.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-seealso' on page 28 undef
+ined on input line 1631.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-seealso' on page 28 undef
+ined on input line 1633.
+
+[28]
+
+LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 29 un
+defined on input line 1709.
+
+
+LaTeX Warning: Hyper reference `markup/toctree:toctree-directive' on page 29 un
+defined on input line 1709.
+
+
+LaTeX Warning: Hyper reference `markup/inline:role-term' on page 29 undefined o
+n input line 1720.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-productionlist' on page 2
+9 undefined on input line 1764.
+
+
+LaTeX Warning: Hyper reference `markup/inline:role-token' on page 29 undefined 
+on input line 1769.
+
+[29] [30] [31]
+
+LaTeX Warning: Hyper reference `domains:domains' on page 32 undefined on input 
+line 1981.
+
+
+LaTeX Warning: Hyper reference `domains:python-roles' on page 32 undefined on i
+nput line 2011.
+
+
+LaTeX Warning: Hyper reference `domains:c-roles' on page 32 undefined on input 
+line 2014.
+
+[32]
+
+LaTeX Warning: Hyper reference `domains:cpp-roles' on page 33 undefined on inpu
+t line 2017.
+
+
+LaTeX Warning: Hyper reference `domains:js-roles' on page 33 undefined on input
+ line 2020.
+
+
+LaTeX Warning: Hyper reference `domains:rst-roles' on page 33 undefined on inpu
+t line 2023.
+
+
+LaTeX Warning: Hyper reference `markup/inline:role-ref' on page 33 undefined on
+ input line 2072.
+
+[33]
+
+LaTeX Warning: Hyper reference `domains:directive-envvar' on page 34 undefined 
+on input line 2132.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-productionlist' on page 3
+4 undefined on input line 2140.
+
+
+LaTeX Warning: Hyper reference `domains:directive-option' on page 34 undefined 
+on input line 2156.
+
+[34]
+LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
+(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 2214.
+
+
+
+LaTeX Warning: Hyper reference `markup/inline:role-guilabel' on page 35 undefin
+ed on input line 2290.
+
+
+LaTeX Warning: Hyper reference `markup/inline:role-file' on page 35 undefined o
+n input line 2331.
+
+
+LaTeX Warning: Hyper reference `markup/misc:role-index' on page 35 undefined on
+ input line 2339.
+
+[35] [36]
+
+LaTeX Warning: Hyper reference `markup/misc:directive-codeauthor' on page 37 un
+defined on input line 2446.
+
+
+LaTeX Warning: Hyper reference `markup/misc:directive-sectionauthor' on page 37
+ undefined on input line 2447.
+
+
+LaTeX Warning: Hyper reference `domains:domains' on page 37 undefined on input 
+line 2456.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2503--2506
+[]\C70/gbsn/bx/n/10/4f � \C70/gbsn/bx/n/10/59 �\T1/ptm/m/n/10 , \T1/pcr/m/n/10 
+module:
+ []
+
+[37]
+
+LaTeX Warning: Hyper reference `markup/misc:directive-index' on page 38 undefin
+ed on input line 2539.
+
+LaTeX Font Info:    Font shape `TS1/pcr/bx/n' in size <9> not available
+(Font)              Font shape `TS1/pcr/b/n' tried instead on input line 2547.
+
+LaTeX Warning: Hyper reference `rest:rst-tables' on page 38 undefined on input 
+line 2580.
+
+[38]
+
+LaTeX Warning: Hyper reference `markup/misc:directive-tabularcolumns' on page 3
+9 undefined on input line 2639.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2632--2641
+
+ []
+
+
+LaTeX Warning: Hyper reference `domains:domains' on page 39 undefined on input 
+line 2642.
+
+[39] [40
+
+]
+Chapter 9.
+
+LaTeX Warning: Hyper reference `glossary:term-directive' on page 41 undefined o
+n input line 2665.
+
+
+LaTeX Warning: Hyper reference `glossary:term-role' on page 41 undefined on inp
+ut line 2666.
+
+
+LaTeX Warning: Hyper reference `glossary:term-object' on page 41 undefined on i
+nput line 2666.
+
+
+LaTeX Warning: Hyper reference `ext/appapi:domain-api' on page 41 undefined on 
+input line 2677.
+
+[41]
+
+LaTeX Warning: Hyper reference `markup/inline:xref-syntax' on page 42 undefined
+ on input line 2752.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:class' on page 42 undefine
+d on input line 2781.
+
+[42]
+
+LaTeX Warning: Hyper reference `domains:directive-py:module' on page 43 undefin
+ed on input line 2804.
+
+
+LaTeX Warning: Hyper reference `domains:role-py:mod' on page 43 undefined on in
+put line 2806.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:module' on page 43 undefin
+ed on input line 2808.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:currentmodule' on page 43 
+undefined on input line 2809.
+
+
+LaTeX Warning: Hyper reference `domains:signatures' on page 43 undefined on inp
+ut line 2840.
+
+
+LaTeX Warning: Hyper reference `domains:signatures' on page 43 undefined on inp
+ut line 2864.
+
+[43]
+
+LaTeX Warning: Hyper reference `domains:signatures' on page 44 undefined on inp
+ut line 2901.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:method' on page 44 undefin
+ed on input line 2909.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:method' on page 44 undefin
+ed on input line 2919.
+
+
+LaTeX Warning: Hyper reference `domains:role-py:func' on page 44 undefined on i
+nput line 2958.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:decorator' on page 44 unde
+fined on input line 2966.
+
+
+LaTeX Warning: Hyper reference `domains:role-py:meth' on page 44 undefined on i
+nput line 2968.
+
+[44] [45] [46] [47] [48]
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_object
+_type' on page 49 undefined on input line 3464.
+
+
+LaTeX Warning: Hyper reference `markup/inline:role-option' on page 49 undefined
+ on input line 3481.
+
+
+LaTeX Warning: Hyper reference `markup/inline:role-envvar' on page 49 undefined
+ on input line 3491.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:currentmodule' on page 49 
+undefined on input line 3499.
+
+
+LaTeX Warning: Hyper reference `domains:directive-option' on page 49 undefined 
+on input line 3500.
+
+
+LaTeX Warning: Hyper reference `domains:directive-program' on page 49 undefined
+ on input line 3503.
+
+
+LaTeX Warning: Hyper reference `markup/inline:role-option' on page 49 undefined
+ on input line 3504.
+
+[49]
+
+LaTeX Warning: Hyper reference `domains:signatures' on page 50 undefined on inp
+ut line 3560.
+
+[50] [51] [52]
+Chapter 10.
+
+LaTeX Warning: Hyper reference `extensions:extensions' on page 53 undefined on 
+input line 3762.
+
+
+LaTeX Warning: Hyper reference `config:html-options' on page 53 undefined on in
+put line 3773.
+
+
+LaTeX Warning: Hyper reference `faq:epub-faq' on page 53 undefined on input lin
+e 3851.
+
+[53
+
+]
+
+LaTeX Warning: Hyper reference `config:latex-options' on page 54 undefined on i
+nput line 3872.
+
+
+LaTeX Warning: Hyper reference `faq:texinfo-faq' on page 54 undefined on input 
+line 3942.
+
+[54]
+
+LaTeX Warning: Hyper reference `builders:serialization-details' on page 55 unde
+fined on input line 4013.
+
+
+LaTeX Warning: Hyper reference `builders:serialization-details' on page 55 unde
+fined on input line 4027.
+
+
+LaTeX Warning: Hyper reference `builders:serialization-details' on page 55 unde
+fined on input line 4044.
+
+[55]
+
+LaTeX Warning: Hyper reference `intl:intl' on page 56 undefined on input line 4
+062.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-versionadded' on page 56 
+undefined on input line 4074.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-versionchanged' on page 5
+6 undefined on input line 4075.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-deprecated' on page 56 un
+defined on input line 4075.
+
+
+LaTeX Warning: Hyper reference `ext/doctest:module-sphinx.ext.doctest' on page 
+56 undefined on input line 4099.
+
+
+LaTeX Warning: Hyper reference `ext/coverage:module-sphinx.ext.coverage' on pag
+e 56 undefined on input line 4102.
+
+
+LaTeX Warning: Hyper reference `builders:sphinx.builders.html.PickleHTMLBuilder
+' on page 56 undefined on input line 4113.
+
+
+LaTeX Warning: Hyper reference `builders:sphinx.builders.html.SerializingHTMLBu
+ilder.out_suffix' on page 56 undefined on input line 4117.
+
+
+LaTeX Warning: Hyper reference `builders:sphinx.builders.html.SerializingHTMLBu
+ilder.globalcontext_filename' on page 56 undefined on input line 4150.
+
+LaTeX Font Info:    Font shape `T1/pcr/bx/it' in size <10> not available
+(Font)              Font shape `T1/pcr/b/it' tried instead on input line 4150.
+LaTeX Font Info:    Font shape `T1/pcr/b/it' in size <10> not available
+(Font)              Font shape `T1/pcr/b/sl' tried instead on input line 4150.
+[56]
+
+LaTeX Warning: Hyper reference `builders:sphinx.builders.html.SerializingHTMLBu
+ilder.searchindex_filename' on page 57 undefined on input line 4171.
+
+[57] [58
+
+]
+Chapter 11.
+
+LaTeX Warning: Hyper reference `glossary:term-configuration-directory' on page 
+59 undefined on input line 4201.
+
+
+LaTeX Warning: Hyper reference `markup/misc:tags' on page 59 undefined on input
+ line 4240.
+
+
+LaTeX Warning: Hyper reference `intl:intl' on page 59 undefined on input line 4
+256.
+
+[59] [60]
+Chapter 12.
+
+LaTeX Warning: Hyper reference `config:intl-options' on page 61 undefined on in
+put line 4302.
+
+<translation.png, id=760, 666.49pt x 392.46625pt>
+File: translation.png Graphic file (type png)
+ <use translation.png>
+Package pdftex.def Info: translation.png used on input line 4307.
+(pdftex.def)             Requested size: 469.755pt x 276.62285pt.
+
+[61
+
+ <./translation.png>]
+
+LaTeX Warning: Hyper reference `builders:sphinx.builders.gettext.MessageCatalog
+Builder' on page 62 undefined on input line 4331.
+
+
+Underfull \hbox (badness 8000) in paragraph at lines 4352--4355
+[]\T1/ptm/m/n/10 Compile your mes-sage cat-a-log to a lo-cale di-rec-tory, say 
+\T1/pcr/m/n/10 translated\T1/ptm/m/n/10 , so it ends up in
+ []
+
+[62]
+Chapter 13.
+<default.png, id=778, 223.58531pt x 150.5625pt>
+File: default.png Graphic file (type png)
+ <use default.png>
+Package pdftex.def Info: default.png used on input line 4429.
+(pdftex.def)             Requested size: 223.58475pt x 150.56212pt.
+File: default.png Graphic file (type png)
+
+<use default.png>
+Package pdftex.def Info: default.png used on input line 4429.
+(pdftex.def)             Requested size: 223.13649pt x 150.26344pt.
+ <sphinxdoc.png, id=779, 223.58531pt x 150.5625pt>
+File: sphinxdoc.png Graphic file (type png)
+
+<use sphinxdoc.png>
+Package pdftex.def Info: sphinxdoc.png used on input line 4433.
+(pdftex.def)             Requested size: 223.58475pt x 150.56212pt.
+File: sphinxdoc.png Graphic file (type png)
+ <use sphinxdoc.png>
+Package pdftex.def Info: sphinxdoc.png used on input line 4433.
+(pdftex.def)             Requested size: 223.13649pt x 150.26344pt.
+
+<scrolls.png, id=780, 223.58531pt x 150.5625pt>
+File: scrolls.png Graphic file (type png)
+ <use scrolls.png>
+Package pdftex.def Info: scrolls.png used on input line 4438.
+(pdftex.def)             Requested size: 223.58475pt x 150.56212pt.
+File: scrolls.png Graphic file (type png)
+
+<use scrolls.png>
+Package pdftex.def Info: scrolls.png used on input line 4438.
+(pdftex.def)             Requested size: 223.13649pt x 150.26344pt.
+ <agogo.png, id=781, 223.58531pt x 150.5625pt>
+File: agogo.png Graphic file (type png)
+
+<use agogo.png>
+Package pdftex.def Info: agogo.png used on input line 4442.
+(pdftex.def)             Requested size: 223.58475pt x 150.56212pt.
+File: agogo.png Graphic file (type png)
+ <use agogo.png>
+Package pdftex.def Info: agogo.png used on input line 4442.
+(pdftex.def)             Requested size: 223.13649pt x 150.26344pt.
+
+<traditional.png, id=782, 223.58531pt x 150.5625pt>
+File: traditional.png Graphic file (type png)
+ <use traditional.png>
+Package pdftex.def Info: traditional.png used on input line 4447.
+(pdftex.def)             Requested size: 223.58475pt x 150.56212pt.
+File: traditional.png Graphic file (type png)
+
+<use traditional.png>
+Package pdftex.def Info: traditional.png used on input line 4447.
+(pdftex.def)             Requested size: 223.13649pt x 150.26344pt.
+ <nature.png, id=783, 298.11375pt x 200.75pt>
+File: nature.png Graphic file (type png)
+
+<use nature.png>
+Package pdftex.def Info: nature.png used on input line 4451.
+(pdftex.def)             Requested size: 298.11302pt x 200.7495pt.
+File: nature.png Graphic file (type png)
+ <use nature.png>
+Package pdftex.def Info: nature.png used on input line 4451.
+(pdftex.def)             Requested size: 223.13649pt x 150.26192pt.
+ <haiku.png, id=784, 298.11375pt x 200.75pt>
+File: haiku.png Graphic file (type png)
+
+<use haiku.png>
+Package pdftex.def Info: haiku.png used on input line 4456.
+(pdftex.def)             Requested size: 298.11302pt x 200.7495pt.
+File: haiku.png Graphic file (type png)
+ <use haiku.png>
+Package pdftex.def Info: haiku.png used on input line 4456.
+(pdftex.def)             Requested size: 223.13649pt x 150.26192pt.
+
+<pyramid.png, id=785, 208.3902pt x 137.65715pt>
+File: pyramid.png Graphic file (type png)
+ <use pyramid.png>
+Package pdftex.def Info: pyramid.png used on input line 4460.
+(pdftex.def)             Requested size: 208.38968pt x 137.6568pt.
+File: pyramid.png Graphic file (type png)
+
+<use pyramid.png>
+Package pdftex.def Info: pyramid.png used on input line 4460.
+(pdftex.def)             Requested size: 208.38968pt x 137.6568pt.
+
+Overfull \hbox (1.71796pt too wide) in paragraph at lines 4423--4465
+[] 
+ []
+
+[63
+
+] [64]
+Overfull \vbox (57.32272pt too high) has occurred while \output is active []
+
+
+[65 <./default.png (PNG copy)> <./sphinxdoc.png (PNG copy)> <./scrolls.png (PNG
+ copy)> <./agogo.png (PNG copy)> <./traditional.png (PNG copy)> <./nature.png> 
+<./haiku.png> <./pyramid.png>] [66] [67]
+
+LaTeX Warning: Hyper reference `templating::doc' on page 68 undefined on input 
+line 4752.
+
+[68] [69] [70
+
+]
+Chapter 14.
+
+LaTeX Warning: Hyper reference `ext/builderapi:writing-builders' on page 71 und
+efined on input line 4807.
+
+
+LaTeX Warning: Hyper reference `builders:sphinx.builders.html.StandaloneHTMLBui
+lder' on page 71 undefined on input line 4808.
+
+
+LaTeX Warning: Hyper reference `builders:sphinx.builders.html.PickleHTMLBuilder
+' on page 71 undefined on input line 4812.
+
+[71]
+
+LaTeX Warning: Hyper reference `templating:reldelim1' on page 72 undefined on i
+nput line 4907.
+
+[72]
+
+LaTeX Warning: Hyper reference `templating:script_files' on page 73 undefined o
+n input line 5014.
+
+[73]
+
+LaTeX Warning: Hyper reference `builders:sphinx.builders.html.SerializingHTMLBu
+ilder.out_suffix' on page 74 undefined on input line 5119.
+
+
+LaTeX Warning: Hyper reference `templating:pathto' on page 74 undefined on inpu
+t line 5154.
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 5178--5181
+\T1/ptm/m/n/10 The ``page name'' of the cur-rent file, i.e. ei-ther the doc-u-m
+ent name if the file is gen-er-
+ []
+
+
+Underfull \hbox (badness 5105) in paragraph at lines 5178--5181
+\T1/ptm/m/n/10 ated from a reST source, or the equiv-a-lent hi-er-ar-chi-cal na
+me rel-a-tive to the out-put di-rec-tory
+ []
+
+
+LaTeX Warning: Hyper reference `templating:next' on page 74 undefined on input 
+line 5188.
+
+
+LaTeX Warning: Hyper reference `templating:next' on page 74 undefined on input 
+line 5197.
+
+[74]
+
+LaTeX Warning: Hyper reference `markup/misc:metadata' on page 75 undefined on i
+nput line 5297.
+
+[75] [76
+
+]
+Chapter 15.
+
+LaTeX Warning: Hyper reference `glossary:term-builder' on page 77 undefined on 
+input line 5350.
+
+[77] [78]
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_config
+_value' on page 79 undefined on input line 5503.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5503--5506
+[]\T1/pcr/m/sl/10 add_config_value() \T1/ptm/m/n/10 lets Sphinx know that it sh
+ould rec-og-nize the new \T1/ptm/m/it/10 con-fig value
+ []
+
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_node' 
+on page 79 undefined on input line 5512.
+
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_direct
+ive' on page 79 undefined on input line 5520.
+
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.connect' o
+n page 79 undefined on input line 5525.
+
+[79] [80] [81]
+
+LaTeX Warning: Hyper reference `ext/builderapi:sphinx.builders.Builder' on page
+ 82 undefined on input line 5762.
+
+[82]
+
+LaTeX Warning: Hyper reference `markup/code:directive-literalinclude' on page 8
+3 undefined on input line 5896.
+
+[83]
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_direct
+ive' on page 84 undefined on input line 5916.
+
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_role' 
+on page 84 undefined on input line 5936.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5956--5956
+[]\T1/ptm/m/it/10 directivename\T1/ptm/m/n/10 , \T1/ptm/m/it/10 role-name\T1/pt
+m/m/n/10 , \T1/ptm/m/it/10 in-dex-tem-plate='`\T1/ptm/m/n/10 , \T1/ptm/m/it/10 
+parse_node=None\T1/ptm/m/n/10 ,
+ []
+
+
+LaTeX Warning: Hyper reference `glossary:term-object' on page 84 undefined on i
+nput line 5957.
+
+[84]
+
+LaTeX Warning: Hyper reference `markup/inline:xref-syntax' on page 85 undefined
+ on input line 6014.
+
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_object
+_type' on page 85 undefined on input line 6025.
+
+
+LaTeX Warning: Hyper reference `markup/inline:role-ref' on page 85 undefined on
+ input line 6029.
+
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_javasc
+ript' on page 85 undefined on input line 6081.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:module-sphinx.ext.autodoc' on page 
+85 undefined on input line 6103.
+
+[85]
+
+LaTeX Warning: Hyper reference `ext/appapi:events' on page 86 undefined on inpu
+t line 6144.
+
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.disconnect
+' on page 86 undefined on input line 6147.
+
+[86]
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 6239.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:module' on page 87 undefin
+ed on input line 6260.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:class' on page 87 undefine
+d on input line 6260.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:module' on page 87 undefin
+ed on input line 6262.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:class' on page 87 undefine
+d on input line 6263.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:class' on page 87 undefine
+d on input line 6266.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:module' on page 87 undefin
+ed on input line 6266.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-autoclass' on page 87 und
+efined on input line 6267.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-automethod' on page 87 un
+defined on input line 6267.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:class' on page 87 undefine
+d on input line 6268.
+
+[87] [88]
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-automodule' on page 89 un
+defined on input line 6407.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-autoclass' on page 89 und
+efined on input line 6407.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-autoexception' on page 89
+ undefined on input line 6408.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-automodule' on page 89 un
+defined on input line 6410.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:function' on page 89 undef
+ined on input line 6417.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-automodule' on page 89 un
+defined on input line 6424.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:module' on page 89 undefin
+ed on input line 6425.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-automodule' on page 89 un
+defined on input line 6431.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-autoclass' on page 89 und
+efined on input line 6431.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-automodule' on page 89 un
+defined on input line 6447.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-autoclass' on page 89 und
+efined on input line 6459.
+
+[89]
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-autodata' on page 90 unde
+fined on input line 6492.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:directive-autoattribute' on page 90
+ undefined on input line 6492.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:module-sphinx.ext.autodoc' on page 
+90 undefined on input line 6517.
+
+[90]
+
+LaTeX Warning: Hyper reference `ext/autosummary:module-sphinx.ext.autosummary' 
+on page 91 undefined on input line 6536.
+
+
+LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
+91 undefined on input line 6539.
+
+
+LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
+91 undefined on input line 6546.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:module-sphinx.ext.autodoc' on page 
+91 undefined on input line 6547.
+
+
+LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
+91 undefined on input line 6558.
+
+
+LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 91 un
+defined on input line 6559.
+
+
+LaTeX Warning: Hyper reference `ext/autodoc:module-sphinx.ext.autodoc' on page 
+91 undefined on input line 6579.
+
+
+LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
+91 undefined on input line 6584.
+
+
+LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 91 un
+defined on input line 6584.
+
+
+LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
+91 undefined on input line 6603.
+
+[91]
+
+LaTeX Warning: Hyper reference `ext/autosummary:customizing-templates' on page 
+92 undefined on input line 6627.
+
+
+LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
+92 undefined on input line 6640.
+
+
+LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
+92 undefined on input line 6648.
+
+
+LaTeX Warning: Hyper reference `templating:templating' on page 92 undefined on 
+input line 6675.
+
+[92]
+
+LaTeX Warning: Hyper reference `ext/autosummary:directive-autosummary' on page 
+93 undefined on input line 6813.
+
+[93] [94]
+
+LaTeX Warning: Hyper reference `ext/doctest:directive-testcode' on page 95 unde
+fined on input line 6961.
+
+
+LaTeX Warning: Hyper reference `ext/doctest:directive-doctest' on page 95 undef
+ined on input line 6993.
+
+
+LaTeX Warning: Hyper reference `ext/doctest:directive-testcode' on page 95 unde
+fined on input line 6993.
+
+
+LaTeX Warning: Hyper reference `ext/doctest:directive-testoutput' on page 95 un
+defined on input line 6993.
+
+[95]
+
+LaTeX Warning: Hyper reference `ext/math:module-sphinx.ext.mathbase' on page 96
+ undefined on input line 7081.
+
+
+LaTeX Warning: Hyper reference `ext/math:module-sphinx.ext.mathbase' on page 96
+ undefined on input line 7085.
+
+
+LaTeX Warning: Hyper reference `ext/math:module-sphinx.ext.pngmath' on page 96 
+undefined on input line 7086.
+
+
+LaTeX Warning: Hyper reference `ext/math:module-sphinx.ext.mathjax' on page 96 
+undefined on input line 7087.
+
+
+LaTeX Warning: Hyper reference `ext/math:module-sphinx.ext.mathbase' on page 96
+ undefined on input line 7094.
+
+[96] [97]
+
+LaTeX Warning: Hyper reference `ext/graphviz:directive-graphviz' on page 98 und
+efined on input line 7242.
+
+[98]
+
+LaTeX Warning: Hyper reference `ext/graphviz:module-sphinx.ext.graphviz' on pag
+e 99 undefined on input line 7313.
+
+
+LaTeX Warning: Hyper reference `domains:directive-py:module' on page 99 undefin
+ed on input line 7322.
+
+[99]
+
+LaTeX Warning: Hyper reference `ext/appapi:sphinx.application.Sphinx.add_config
+_value' on page 100 undefined on input line 7371.
+
+
+LaTeX Warning: Hyper reference `ext/coverage:sphinx.ext.coverage.CoverageBuilde
+r' on page 100 undefined on input line 7389.
+
+
+LaTeX Warning: Hyper reference `markup/para:directive-note' on page 100 undefin
+ed on input line 7413.
+
+
+LaTeX Warning: Hyper reference `ext/extlinks:module-sphinx.ext.extlinks' on pag
+e 100 undefined on input line 7444.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7442--7446
+[]\T1/ptm/m/n/10 Let's as-sume that you want to in-clude many links to is-sues 
+at the Sphinx tracker, at
+ []
+
+[100]
+
+LaTeX Warning: Hyper reference `domains:c-domain' on page 101 undefined on inpu
+t line 7479.
+
+[101] [102]
+Chapter 16.
+
+LaTeX Warning: Hyper reference `web/quickstart:websupportquickstart' on page 10
+3 undefined on input line 7560.
+
+
+LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
+03 undefined on input line 7572.
+
+
+LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
+03 undefined on input line 7593.
+
+
+LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
+03 undefined on input line 7600.
+
+[103
+
+]
+
+LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
+04 undefined on input line 7679.
+
+[104] [105]
+
+LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
+06 undefined on input line 7835.
+
+[106]
+
+LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
+07 undefined on input line 7864.
+
+
+LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
+07 undefined on input line 7869.
+
+
+LaTeX Warning: Hyper reference `web/searchadapters:sphinx.websupport.search.Bas
+eSearch' on page 107 undefined on input line 7874.
+
+
+LaTeX Warning: Hyper reference `web/storagebackends:sphinx.websupport.storage.S
+torageBackend' on page 107 undefined on input line 7878.
+
+
+LaTeX Warning: Hyper reference `web/searchadapters:sphinx.websupport.search.Bas
+eSearch' on page 107 undefined on input line 7907.
+
+
+LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
+07 undefined on input line 7908.
+
+
+LaTeX Warning: Hyper reference `web/searchadapters:sphinx.websupport.search.Bas
+eSearch' on page 107 undefined on input line 7918.
+
+[107]
+
+LaTeX Warning: Hyper reference `web/storagebackends:sphinx.websupport.storage.S
+torageBackend' on page 108 undefined on input line 7942.
+
+
+LaTeX Warning: Hyper reference `web/api:sphinx.websupport.WebSupport' on page 1
+08 undefined on input line 7944.
+
+
+LaTeX Warning: Hyper reference `web/storagebackends:sphinx.websupport.storage.S
+torageBackend' on page 108 undefined on input line 7953.
+
+[108]
+Chapter 17.
+
+LaTeX Warning: Hyper reference `builders:builders' on page 109 undefined on inp
+ut line 7977.
+
+
+LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 109 u
+ndefined on input line 7982.
+
+
+LaTeX Warning: Hyper reference `theming::doc' on page 109 undefined on input li
+ne 7985.
+
+
+LaTeX Warning: Hyper reference `templating:toctree' on page 109 undefined on in
+put line 7991.
+
+
+LaTeX Warning: Hyper reference `ext/tutorial:exttut' on page 109 undefined on i
+nput line 7995.
+
+[109
+
+] [110]
+
+LaTeX Warning: Hyper reference `faq:texinfo-links' on page 111 undefined on inp
+ut line 8149.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8152--8159
+[]\T1/ptm/m/n/10 The ex-act be-hav-ior of how Emacs dis-plays ref-er-ences is d
+e-pen-dent on the vari-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8160--8164
+[]\T1/ptm/m/n/10 If you want Emacs to dis-play Info files pro-duced by Sphinx u
+s-ing the value \T1/pcr/m/n/10 hide \T1/ptm/m/n/10 for
+ []
+
+[111] [112]
+Chapter 18.
+
+LaTeX Warning: Hyper reference `ext/builderapi:sphinx.builders.Builder' on page
+ 113 undefined on input line 8246.
+
+
+LaTeX Warning: Hyper reference `builders:builders' on page 113 undefined on inp
+ut line 8252.
+
+
+LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 113 und
+efined on input line 8256.
+
+
+LaTeX Warning: Hyper reference `rest:directives' on page 113 undefined on input
+ line 8272.
+
+
+LaTeX Warning: Hyper reference `glossary:term-source-directory' on page 113 und
+efined on input line 8279.
+
+
+LaTeX Warning: Hyper reference `glossary:term-directive' on page 113 undefined 
+on input line 8288.
+
+
+LaTeX Warning: Hyper reference `glossary:term-role' on page 113 undefined on in
+put line 8289.
+
+
+LaTeX Warning: Hyper reference `glossary:term-object' on page 113 undefined on 
+input line 8289.
+
+
+LaTeX Warning: Hyper reference `domains:domains' on page 113 undefined on input
+ line 8297.
+
+
+LaTeX Warning: Hyper reference `markup/toctree:directive-toctree' on page 113 u
+ndefined on input line 8306.
+
+
+LaTeX Warning: Hyper reference `domains:directive-object' on page 113 undefined
+ on input line 8310.
+
+
+LaTeX Warning: Hyper reference `rest:inlinemarkup' on page 113 undefined on inp
+ut line 8316.
+
+[113
+
+] [114]
+Chapter 19.
+
+LaTeX Warning: Hyper reference `glossary:glossary' on page 115 undefined on inp
+ut line 8337.
+
+[115
+
+] [116
+
+]
+
+LaTeX Warning: Reference `config:module-conf' on page 117 undefined on input li
+ne 8346.
+
+
+LaTeX Warning: Reference `extensions:module-sphinx.application' on page 117 und
+efined on input line 8349.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders' on page 117 undefine
+d on input line 8350.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.changes' on page 117 
+undefined on input line 8351.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.devhelp' on page 117 
+undefined on input line 8352.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.epub' on page 117 und
+efined on input line 8353.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.gettext' on page 117 
+undefined on input line 8354.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.html' on page 117 und
+efined on input line 8355.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.htmlhelp' on page 117
+ undefined on input line 8356.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.latex' on page 117 un
+defined on input line 8357.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.linkcheck' on page 11
+7 undefined on input line 8358.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.manpage' on page 117 
+undefined on input line 8359.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.qthelp' on page 117 u
+ndefined on input line 8360.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.texinfo' on page 117 
+undefined on input line 8361.
+
+
+LaTeX Warning: Reference `builders:module-sphinx.builders.text' on page 117 und
+efined on input line 8362.
+
+
+LaTeX Warning: Reference `ext/appapi:module-sphinx.domains' on page 117 undefin
+ed on input line 8363.
+
+
+LaTeX Warning: Reference `ext/autodoc:module-sphinx.ext.autodoc' on page 117 un
+defined on input line 8364.
+
+
+LaTeX Warning: Reference `ext/autosummary:module-sphinx.ext.autosummary' on pag
+e 117 undefined on input line 8365.
+
+
+LaTeX Warning: Reference `ext/coverage:module-sphinx.ext.coverage' on page 117 
+undefined on input line 8366.
+
+
+LaTeX Warning: Reference `ext/doctest:module-sphinx.ext.doctest' on page 117 un
+defined on input line 8367.
+
+
+LaTeX Warning: Reference `ext/extlinks:module-sphinx.ext.extlinks' on page 117 
+undefined on input line 8368.
+
+
+LaTeX Warning: Reference `ext/graphviz:module-sphinx.ext.graphviz' on page 117 
+undefined on input line 8369.
+
+
+LaTeX Warning: Reference `ext/ifconfig:module-sphinx.ext.ifconfig' on page 117 
+undefined on input line 8370.
+
+
+LaTeX Warning: Reference `ext/inheritance:module-sphinx.ext.inheritance_diagram
+' on page 117 undefined on input line 8371.
+
+
+LaTeX Warning: Reference `ext/intersphinx:module-sphinx.ext.intersphinx' on pag
+e 117 undefined on input line 8372.
+
+
+LaTeX Warning: Reference `ext/math:module-sphinx.ext.jsmath' on page 117 undefi
+ned on input line 8373.
+
+
+LaTeX Warning: Reference `ext/math:module-sphinx.ext.mathbase' on page 117 unde
+fined on input line 8374.
+
+
+LaTeX Warning: Reference `ext/math:module-sphinx.ext.mathjax' on page 117 undef
+ined on input line 8375.
+
+
+LaTeX Warning: Reference `ext/oldcmarkup:module-sphinx.ext.oldcmarkup' on page 
+117 undefined on input line 8376.
+
+
+LaTeX Warning: Reference `ext/math:module-sphinx.ext.pngmath' on page 117 undef
+ined on input line 8377.
+
+
+LaTeX Warning: Reference `ext/refcounting:module-sphinx.ext.refcounting' on pag
+e 117 undefined on input line 8378.
+
+
+LaTeX Warning: Reference `ext/todo:module-sphinx.ext.todo' on page 117 undefine
+d on input line 8379.
+
+
+LaTeX Warning: Reference `ext/viewcode:module-sphinx.ext.viewcode' on page 117 
+undefined on input line 8380.
+
+[117
+
+
+]
+No file sphinx.ind.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8385.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8385.
+(./sphinx.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8385.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8385.
+
+
+
+Package rerunfilecheck Warning: File `sphinx.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `sphinx.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  281F8FA295E8C33E67C133E1DF2DE954;12176.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8385.
+ ) 
+Here is how much of TeX's memory you used:
+ 18285 strings out of 494497
+ 256409 string characters out of 6172400
+ 312709 words of memory out of 5000000
+ 20158 multiletter control sequences out of 15000+600000
+ 160803 words of font info for 366 fonts, out of 8000000 for 9000
+ 265 hyphenation exceptions out of 8191
+ 39i,13n,49p,539b,2599s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/
+fonts/type1/arphic/gbsnu/gbsnu30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
+/gbsnu4e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share
+/texmf/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/texmf/fonts/type1/arphi
+c/gbsnu/gbsnu51.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></us
+r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/share/texmf/fonts/type
+1/arphic/gbsnu/gbsnu54.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu55.p
+fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu56.pfb></usr/share/texmf/fon
+ts/type1/arphic/gbsnu/gbsnu57.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
+snu58.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/te
+xmf/fonts/type1/arphic/gbsnu/gbsnu5b.pfb></usr/share/texmf/fonts/type1/arphic/g
+bsnu/gbsnu5c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/s
+hare/texmf/fonts/type1/arphic/gbsnu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/a
+rphic/gbsnu/gbsnu5f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb>
+</usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/
+type1/arphic/gbsnu/gbsnu62.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu
+63.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu64.pfb></usr/share/texmf
+/fonts/type1/arphic/gbsnu/gbsnu65.pfb></usr/share/texmf/fonts/type1/arphic/gbsn
+u/gbsnu66.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu67.pfb></usr/shar
+e/texmf/fonts/type1/arphic/gbsnu/gbsnu68.pfb></usr/share/texmf/fonts/type1/arph
+ic/gbsnu/gbsnu69.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6a.pfb></u
+sr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6b.pfb></usr/share/texmf/fonts/typ
+e1/arphic/gbsnu/gbsnu6c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6d.
+pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6e.pfb></usr/share/texmf/fo
+nts/type1/arphic/gbsnu/gbsnu6f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
+bsnu70.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/t
+exmf/fonts/type1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/arphic/
+gbsnu/gbsnu73.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/
+share/texmf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/
+arphic/gbsnu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb
+></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu78.pfb></usr/share/texmf/fonts
+/type1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsn
+u7a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texm
+f/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbs
+nu/gbsnu7d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/sha
+re/texmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arp
+hic/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></
+usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/ty
+pe1/arphic/gbsnu/gbsnu83.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu84
+.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu85.pfb></usr/share/texmf/f
+onts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/
+gbsnu89.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8a.pfb></usr/share/
+texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/type1/arphic
+/gbsnu/gbsnu8c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr
+/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8e.pfb></usr/share/texmf/fonts/type1
+/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pf
+b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/font
+s/type1/arphic/gbsnu/gbsnu94.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
+nu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/tex
+mf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gb
+snu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu99.pfb></usr/sh
+are/texmf/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/texmf/fonts/type1/ar
+phic/gbsnu/gbsnu9e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9f.pfb><
+/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/courier/ucrbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cou
+rier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on sphinx.pdf (121 pages, 1396315 bytes).
+PDF statistics:
+ 1645 PDF objects out of 1728 (max. 8388607)
+ 1326 compressed objects within 14 object streams
+ 597 named destinations out of 1000 (max. 500000)
+ 375 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>展示示例代码 &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="../index.html"/>
+        <link rel="up" title="Sphinx标记的组成" href="index.html"/>
+        <link rel="next" title="内联标记" href="inline.html"/>
+        <link rel="prev" title="段落级别的标记" href="para.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Sphinx标记的组成</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="toctree.html">目录树</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html">段落级别的标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id2">目录表格标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id5">术语</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id6">语法产品的显示</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">展示示例代码</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id6">行号</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">包含</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="inline.html">内联标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html">未分类标记</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templating.html">Templating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extensions.html">Sphinx Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Sphinx标记的组成</a> &raquo;</li>
+      
+    <li>展示示例代码</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/markup/code.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="code-examples">
+<span id="id1"></span><h1>展示示例代码</h1>
+<p id="index-0">示例的Python源代码或者交互界面都可以使用标准reST模块实现.在正常段落后面跟着 <code class="docutils literal"><span class="pre">::</span></code> 开始，再加上适当缩进.</p>
+<p>交互界面需包含提示及Python代码的输出.  交互界面没有特别的标记.  在最后一行输入或输出之后，不应出现空的提示; 这是一个什么都不做的例子:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span>&gt;&gt;&gt; 1 + 1
+2
+&gt;&gt;&gt;
+</pre></div>
+</div>
+<p>语法高亮显示由 <a class="reference external" href="http://pygments.org">Pygments</a> (如果安装) 优雅的显示:</p>
+<ul>
+<li><p class="first">每个源文件都有高亮语言&#8221;highlighting language&#8221;.  默认是
+<code class="docutils literal"><span class="pre">'python'</span></code> ，多数文件会高亮显示 Python 代码段,
+可以在 <a href="#id2"><span class="problematic" id="id3">:confval:`highlight_language`</span></a> 配置.</p>
+</li>
+<li><p class="first">有了Python 高亮显示模块, 交互界面会自动识别并且适当强调显示.  一般Python 代码仅在可解析时高亮显示
+(使用默认的Python, 但是零散的代码段比如shell命令等代码块将不会像Python一样高亮显示).</p>
+</li>
+<li><p class="first">高亮显示语言也可以通过指令 <code class="docutils literal"><span class="pre">highlight</span></code> 改变,如下:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">highlight</span><span class="p">::</span> c
+</pre></div>
+</div>
+<p>C 语言将会被使用直到下一个 <code class="docutils literal"><span class="pre">highlight</span></code> 指令.</p>
+</li>
+<li><p class="first">如果文档需展示不同语言片段, 直接使用 <code class="xref rst rst-dir docutils literal"><span class="pre">code-block</span></code> 指令给出高亮语言:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> ruby
+
+   Some Ruby code.
+</pre></div>
+</div>
+<p>指令别名也可用于  <code class="xref rst rst-dir docutils literal"><span class="pre">sourcecode</span></code> .</p>
+</li>
+<li><p class="first">有效的语言:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">none</span></code> (没有高亮显示)</li>
+<li><code class="docutils literal"><span class="pre">python</span></code> (默认， <a href="#id4"><span class="problematic" id="id5">:confval:`highlight_language`</span></a> 没有设置时)</li>
+<li><code class="docutils literal"><span class="pre">guess</span></code> (让 Pygments 根据内容去决定, 仅支持一些可识别的语言)</li>
+<li><code class="docutils literal"><span class="pre">rest</span></code></li>
+<li><code class="docutils literal"><span class="pre">c</span></code></li>
+<li>... 其他Pygments 支持的语言名.</li>
+</ul>
+</li>
+<li><p class="first">如果选定语言的高亮显示失败，则模块不会以其他方式高亮显示.</p>
+</li>
+</ul>
+<div class="section" id="id6">
+<h2>行号</h2>
+<p>如果安装好, Pygments可以为代码块产生行号.自动高亮显示模块 (以 <code class="docutils literal"><span class="pre">::</span></code> 开始), 行号由指令 <code class="xref rst rst-dir docutils literal"><span class="pre">highlight</span></code> 的选项 <code class="docutils literal"><span class="pre">linenothreshold</span></code> 管理:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">highlight</span><span class="p">::</span> python
+   <span class="nc">:linenothreshold:</span> <span class="nf">5</span>
+</pre></div>
+</div>
+<p>如果代码块多于5行将产生行号.</p>
+<p>对于 <code class="xref rst rst-dir docutils literal"><span class="pre">code-block</span></code> 模块, 选项 <code class="docutils literal"><span class="pre">linenos</span></code> 给出则为独立块生成行号:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> ruby
+   <span class="nc">:linenos:</span>
+
+   Some more Ruby code.
+</pre></div>
+</div>
+<p>另外, 选项 <code class="docutils literal"><span class="pre">emphasize-lines</span></code> 可以生成特别强调的行:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> python
+   <span class="nc">:emphasize-lines:</span> <span class="nf">3,5</span>
+
+   def some_function():
+       interesting = False
+       print &#39;This line is highlighted.&#39;
+       print &#39;This one is not...&#39;
+       print &#39;...but this one is.&#39;
+</pre></div>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 1.1: </span>添加了``emphasize-lines`` .</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>包含</h2>
+<dl class="directive">
+<dt id="directive-literalinclude">
+<code class="descname">.. literalinclude::</code><code class="descclassname"> filename</code></dt>
+<dd><p>目录里不显示的文件可能被一个外部纯文本文件保存为例子文本.  文件使用指令 <code class="docutils literal"><span class="pre">literalinclude</span></code> 包含.
+<a class="footnote-reference" href="#id11" id="id8">[1]</a> 例如包含Python源文件 <code class="file docutils literal"><span class="pre">example.py</span></code>, 使用:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> example.py
+</pre></div>
+</div>
+<p>文件名为当前文件的相对路径.  如果是绝对路径 (以 <code class="docutils literal"><span class="pre">/</span></code> 开始), 则是源目录的相对路径.</p>
+<p>输入标签可以扩展，给出 <code class="docutils literal"><span class="pre">tab-width</span></code> 选项指定标签宽度.</p>
+<p>该指令也支持 <code class="docutils literal"><span class="pre">linenos</span></code> 选项产生行号, <code class="docutils literal"><span class="pre">emphasize-lines</span></code> 选项生成强调行,
+以及 <code class="docutils literal"><span class="pre">language</span></code> 选项选择不同于当前文件使用的标准语言的语言.  例如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> example.rb
+   <span class="nc">:language:</span> <span class="nf">ruby</span>
+   <span class="nc">:emphasize-lines:</span> <span class="nf">12,15-18</span>
+   <span class="nc">:linenos:</span>
+</pre></div>
+</div>
+<p>被包含文件的编码会被认定为 <a href="#id9"><span class="problematic" id="id10">:confval:`source_encoding`</span></a>.
+如果文件有不同的编码，可以使用 <code class="docutils literal"><span class="pre">encoding</span></code> 选项:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> example.py
+   <span class="nc">:encoding:</span> <span class="nf">latin-1</span>
+</pre></div>
+</div>
+<p>指令支持包含文件的一部分.  例如
+Python模块, 可以选择类，函数或方法，使用 <code class="docutils literal"><span class="pre">pyobject</span></code> 选项:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> example.py
+   <span class="nc">:pyobject:</span> <span class="nf">Timer.start</span>
+</pre></div>
+</div>
+<p>这会包含文件中 <code class="docutils literal"><span class="pre">Timer</span></code> 类的 <code class="docutils literal"><span class="pre">start()</span></code> 方法后面的代码行.</p>
+<p>使用 <code class="docutils literal"><span class="pre">lines</span></code> 选项精确的控制所包含的行:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> example.py
+   <span class="nc">:lines:</span> <span class="nf">1,3,5-10,20-</span>
+</pre></div>
+</div>
+<p>包含1, 3, 5 到 10 及 20 之后的代码行.</p>
+<p>另一种实现包含文件特定部分的方式是使用 <code class="docutils literal"><span class="pre">start-after</span></code> 或 <code class="docutils literal"><span class="pre">end-before</span></code> 选项 (仅使用一种).
+选项 <code class="docutils literal"><span class="pre">start-after</span></code> 给出一个字符串, 第一行包含该字符串后面的所有行均被包含.
+选项 <code class="docutils literal"><span class="pre">end-before</span></code> 也是给出一个字符串，包含该字符串的第一行前面的文本将会被包含.</p>
+<p>可以往包含代码的首尾添加新行，使用 <code class="docutils literal"><span class="pre">prepend</span></code> 及 <code class="docutils literal"><span class="pre">append</span></code> 选项.
+这很有用，比如在高亮显示的PHP 代码里不能包含 <code class="docutils literal"><span class="pre">&lt;?php</span></code>/<code class="docutils literal"><span class="pre">?&gt;</span></code> 标签.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.4.3: </span>选项 <code class="docutils literal"><span class="pre">encoding</span></code> .</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6: </span>选项 <code class="docutils literal"><span class="pre">pyobject</span></code>, <code class="docutils literal"><span class="pre">lines</span></code>, <code class="docutils literal"><span class="pre">start-after</span></code> 及 <code class="docutils literal"><span class="pre">end-before</span></code> ,
+并支持绝对文件名.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0: </span>选项 <code class="docutils literal"><span class="pre">prepend</span></code> 、 <code class="docutils literal"><span class="pre">append</span></code> 及 <code class="docutils literal"><span class="pre">tab-width</span></code>.</p>
+</div>
+</dd></dl>
+
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="id11" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id8">[1]</a></td><td>标准包含指令 <code class="docutils literal"><span class="pre">..</span> <span class="pre">include</span></code> , 如果文件不存在会抛出异常.  这一个则仅会产生警告.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="inline.html" class="btn btn-neutral float-right" title="内联标记" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="para.html" class="btn btn-neutral" title="段落级别的标记" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

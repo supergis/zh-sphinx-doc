@@ -1,0 +1,402 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sphinx.ext.doctest – Test snippets in the documentation &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="../index.html"/>
+        <link rel="up" title="Sphinx Extensions" href="../extensions.html"/>
+        <link rel="next" title="sphinx.ext.intersphinx – Link to other projects’ documentation" href="intersphinx.html"/>
+        <link rel="prev" title="sphinx.ext.autosummary – Generate autodoc summaries" href="autosummary.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markup/index.html">Sphinx标记的组成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templating.html">Templating</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../extensions.html">Sphinx Extensions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html">Tutorial: Writing a simple extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appapi.html">Extension API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builderapi.html">Writing new builders</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../extensions.html#builtin-sphinx-extensions">Builtin Sphinx extensions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="autodoc.html"><code class="docutils literal"><span class="pre">sphinx.ext.autodoc</span></code> &#8211; Include documentation from docstrings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autosummary.html"><code class="docutils literal"><span class="pre">sphinx.ext.autosummary</span></code> &#8211; Generate autodoc summaries</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal"><span class="pre">sphinx.ext.doctest</span></code> &#8211; Test snippets in the documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intersphinx.html"><code class="docutils literal"><span class="pre">sphinx.ext.intersphinx</span></code> &#8211; Link to other projects&#8217; documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math.html">Math support in Sphinx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="graphviz.html"><code class="docutils literal"><span class="pre">sphinx.ext.graphviz</span></code> &#8211; Add Graphviz graphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inheritance.html"><code class="docutils literal"><span class="pre">sphinx.ext.inheritance_diagram</span></code> &#8211; Include inheritance diagrams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="refcounting.html"><code class="docutils literal"><span class="pre">sphinx.ext.refcounting</span></code> &#8211; Keep track of reference counting behavior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ifconfig.html"><code class="docutils literal"><span class="pre">sphinx.ext.ifconfig</span></code> &#8211; Include content based on configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coverage.html"><code class="docutils literal"><span class="pre">sphinx.ext.coverage</span></code> &#8211; Collect doc coverage stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="todo.html"><code class="docutils literal"><span class="pre">sphinx.ext.todo</span></code> &#8211; Support for todo items</a></li>
+<li class="toctree-l3"><a class="reference internal" href="extlinks.html"><code class="docutils literal"><span class="pre">sphinx.ext.extlinks</span></code> &#8211; Markup to shorten external links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="viewcode.html"><code class="docutils literal"><span class="pre">sphinx.ext.viewcode</span></code> &#8211; Add links to highlighted source code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oldcmarkup.html"><code class="docutils literal"><span class="pre">sphinx.ext.oldcmarkup</span></code> &#8211; Compatibility extension for old C markup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../extensions.html#third-party-extensions">Third-party extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../extensions.html">Sphinx Extensions</a> &raquo;</li>
+      
+    <li><code class="docutils literal"><span class="pre">sphinx.ext.doctest</span></code> &#8211; Test snippets in the documentation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/ext/doctest.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-sphinx.ext.doctest">
+<span id="sphinx-ext-doctest-test-snippets-in-the-documentation"></span><h1><a class="reference internal" href="#module-sphinx.ext.doctest" title="sphinx.ext.doctest: Test snippets in the documentation."><code class="xref py py-mod docutils literal"><span class="pre">sphinx.ext.doctest</span></code></a> &#8211; Test snippets in the documentation</h1>
+<p id="index-0">This extension allows you to test snippets in the documentation in a natural
+way.  It works by collecting specially-marked up code blocks and running them as
+doctest tests.</p>
+<p>Within one document, test code is partitioned in <em>groups</em>, where each group
+consists of:</p>
+<ul class="simple">
+<li>zero or more <em>setup code</em> blocks (e.g. importing the module to test)</li>
+<li>one or more <em>test</em> blocks</li>
+</ul>
+<p>When building the docs with the <code class="docutils literal"><span class="pre">doctest</span></code> builder, groups are collected for
+each document and run one after the other, first executing setup code blocks,
+then the test blocks in the order they appear in the file.</p>
+<p>There are two kinds of test blocks:</p>
+<ul class="simple">
+<li><em>doctest-style</em> blocks mimic interactive sessions by interleaving Python code
+(including the interpreter prompt) and output.</li>
+<li><em>code-output-style</em> blocks consist of an ordinary piece of Python code, and
+optionally, a piece of output for that code.</li>
+</ul>
+<p>The doctest extension provides four directives.  The <em>group</em> argument is
+interpreted as follows: if it is empty, the block is assigned to the group named
+<code class="docutils literal"><span class="pre">default</span></code>.  If it is <code class="docutils literal"><span class="pre">*</span></code>, the block is assigned to all groups (including the
+<code class="docutils literal"><span class="pre">default</span></code> group).  Otherwise, it must be a comma-separated list of group
+names.</p>
+<dl class="directive">
+<dt id="directive-testsetup">
+<code class="descname">.. testsetup::</code><code class="descclassname"> [group]</code></dt>
+<dd><p>A setup code block.  This code is not shown in the output for other builders,
+but executed before the doctests of the group(s) it belongs to.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-testcleanup">
+<code class="descname">.. testcleanup::</code><code class="descclassname"> [group]</code></dt>
+<dd><p>A cleanup code block.  This code is not shown in the output for other
+builders, but executed after the doctests of the group(s) it belongs to.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.1.</span></p>
+</div>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-doctest">
+<code class="descname">.. doctest::</code><code class="descclassname"> [group]</code></dt>
+<dd><p>A doctest-style code block.  You can use standard <code class="xref py py-mod docutils literal"><span class="pre">doctest</span></code> flags for
+controlling how actual output is compared with what you give as output.  By
+default, these options are enabled: <code class="docutils literal"><span class="pre">ELLIPSIS</span></code> (allowing you to put
+ellipses in the expected output that match anything in the actual output),
+<code class="docutils literal"><span class="pre">IGNORE_EXCEPTION_DETAIL</span></code> (not comparing tracebacks),
+<code class="docutils literal"><span class="pre">DONT_ACCEPT_TRUE_FOR_1</span></code> (by default, doctest accepts &#8220;True&#8221; in the output
+where &#8220;1&#8221; is given &#8211; this is a relic of pre-Python 2.2 times).</p>
+<p>This directive supports two options:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">hide</span></code>, a flag option, hides the doctest block in other builders.  By
+default it is shown as a highlighted doctest block.</li>
+<li><code class="docutils literal"><span class="pre">options</span></code>, a string option, can be used to give a comma-separated list of
+doctest flags that apply to each example in the tests.  (You still can give
+explicit flags per example, with doctest comments, but they will show up in
+other builders too.)</li>
+</ul>
+<p>Note that like with standard doctests, you have to use <code class="docutils literal"><span class="pre">&lt;BLANKLINE&gt;</span></code> to
+signal a blank line in the expected output.  The <code class="docutils literal"><span class="pre">&lt;BLANKLINE&gt;</span></code> is removed
+when building presentation output (HTML, LaTeX etc.).</p>
+<p>Also, you can give inline doctest options, like in doctest:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span>&gt;&gt;&gt; datetime.date.now()   # doctest: +SKIP
+datetime.date(2008, 1, 1)
+</pre></div>
+</div>
+<p>They will be respected when the test is run, but stripped from presentation
+output.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-testcode">
+<code class="descname">.. testcode::</code><code class="descclassname"> [group]</code></dt>
+<dd><p>A code block for a code-output-style test.</p>
+<p>This directive supports one option:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">hide</span></code>, a flag option, hides the code block in other builders.  By
+default it is shown as a highlighted code block.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Code in a <code class="docutils literal"><span class="pre">testcode</span></code> block is always executed all at once, no matter how
+many statements it contains.  Therefore, output will <em>not</em> be generated
+for bare expressions &#8211; use <code class="docutils literal"><span class="pre">print</span></code>.  Example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">testcode</span><span class="p">::</span>
+
+   1+1        # this will give no output!
+   print 2+2  # this will give output
+
+<span class="p">..</span> <span class="ow">testoutput</span><span class="p">::</span>
+
+   4
+</pre></div>
+</div>
+<p class="last">Also, please be aware that since the doctest module does not support
+mixing regular output and an exception message in the same snippet, this
+applies to testcode/testoutput as well.</p>
+</div>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-testoutput">
+<code class="descname">.. testoutput::</code><code class="descclassname"> [group]</code></dt>
+<dd><p>The corresponding output, or the exception message, for the last
+<a class="reference internal" href="#directive-testcode" title="testcode directive"><code class="xref rst rst-dir docutils literal"><span class="pre">testcode</span></code></a> block.</p>
+<p>This directive supports two options:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">hide</span></code>, a flag option, hides the output block in other builders.  By
+default it is shown as a literal block without highlighting.</li>
+<li><code class="docutils literal"><span class="pre">options</span></code>, a string option, can be used to give doctest flags
+(comma-separated) just like in normal doctest blocks.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">testcode</span><span class="p">::</span>
+
+   print &#39;Output     text.&#39;
+
+<span class="p">..</span> <span class="ow">testoutput</span><span class="p">::</span>
+   <span class="nc">:hide:</span>
+   <span class="nc">:options:</span> <span class="nf">-ELLIPSIS, +NORMALIZE_WHITESPACE</span>
+
+   Output text.
+</pre></div>
+</div>
+</dd></dl>
+
+<p>The following is an example for the usage of the directives.  The test via
+<a class="reference internal" href="#directive-doctest" title="doctest directive"><code class="xref rst rst-dir docutils literal"><span class="pre">doctest</span></code></a> and the test via <a class="reference internal" href="#directive-testcode" title="testcode directive"><code class="xref rst rst-dir docutils literal"><span class="pre">testcode</span></code></a> and <a class="reference internal" href="#directive-testoutput" title="testoutput directive"><code class="xref rst rst-dir docutils literal"><span class="pre">testoutput</span></code></a> are
+equivalent.</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="gh">The parrot module</span>
+<span class="gh">=================</span>
+
+<span class="p">..</span> <span class="ow">testsetup</span><span class="p">::</span> *
+
+   import parrot
+
+The parrot module is a module about parrots.
+
+Doctest example:
+
+<span class="p">..</span> <span class="ow">doctest</span><span class="p">::</span>
+
+   &gt;&gt;&gt; parrot.voom(3000)
+   This parrot wouldn&#39;t voom if you put 3000 volts through it!
+
+Test-Output example:
+
+<span class="p">..</span> <span class="ow">testcode</span><span class="p">::</span>
+
+   parrot.voom(3000)
+
+This would output:
+
+<span class="p">..</span> <span class="ow">testoutput</span><span class="p">::</span>
+
+   This parrot wouldn&#39;t voom if you put 3000 volts through it!
+</pre></div>
+</div>
+<p>There are also these config values for customizing the doctest extension:</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="intersphinx.html" class="btn btn-neutral float-right" title="sphinx.ext.intersphinx – Link to other projects’ documentation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="autosummary.html" class="btn btn-neutral" title="sphinx.ext.autosummary – Generate autodoc summaries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>引言 &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="index.html"/>
+        <link rel="next" title="Sphinx初尝" href="tutorial.html"/>
+        <link rel="prev" title="译者前言" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#id2">欢迎</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">引言</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">不同文档系统的转换</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">在其他系统中使用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">前提</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">用法</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markup/index.html">Sphinx标记的组成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templating.html">Templating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Sphinx Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="contents.html">Docs</a> &raquo;</li>
+      
+    <li>引言</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/intro.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>引言</h1>
+<p>该文档是Sphinx建立文档的参考.  Sphinx 将 <a class="reference external" href="http://docutils.sf.net/rst.html">reStructuredText</a>  源文件集转换为丰富的输出格式，并自动产生参考文献、索引等.
+简言之，如果你有一个包含reST-格式的文档的目录（包含文档的所有文件或子目录）,
+Sphinx 会生成组织合理的HTML文件（在另一个目录里），使得浏览及导航功能使用非常方便.
+通用一份源文件，你可以生成LaTeX 文件，然后编译成 PDF 版本的文档,
+也可以直接使用 <a class="reference external" href="http://rst2pdf.googlecode.com">rst2pdf</a> 生成PDF 文件.</p>
+<p>重点讨论的是手写文档而不是自动生成的API文档.
+但是我们对于两种都支持的很好，甚至支持两种内容混合的文档,
+假如你需要纯净的API文档，查看 <a class="reference external" href="http://epydoc.sf.net/">Epydoc</a>, 它可以解析 reST.</p>
+<div class="section" id="id2">
+<h2>不同文档系统的转换</h2>
+<p>这一节搜集了一些有用的提示，帮助我们从其他的文档系统迁移到reStructuredText/Sphinx.</p>
+<ul class="simple">
+<li>Gerard Flanagan （人名）写了一个脚本把纯净的HTML转换为 reST文本;
+你可以到 <a class="reference external" href="http://pypi.python.org/pypi/html2rest">Python 索引页</a> 查看.</li>
+<li>原来的Python文档转换为 Sphinx,
+代码托管在 <a class="reference external" href="http://svn.python.org/projects/doctools/converter">the Python SVN repository</a>.
+它包含将Python-doc-style LaTeX 标记转换为Sphinx reST 的生成代码.</li>
+<li>Marcin Wojdyr 写了一个脚本，将 Docbook 转换为 reST ; 可查看 <a class="reference external" href="http://code.google.com/p/db2rst/">Google Code</a>.</li>
+<li>Christophe de Vienne 写了一个将 Open/LibreOffice 文档转换为
+Sphinx的工具: <a class="reference external" href="http://pypi.python.org/pypi/odt2sphinx/">odt2sphinx</a>.</li>
+<li>转换不同的标记语言, <a class="reference external" href="http://johnmacfarlane.net/pandoc/">Pandoc</a> 也是一个非常有用的工具.</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>在其他系统中使用</h2>
+<p>请参考 <a class="reference internal" href="faq.html#usingwith"><span class="std std-ref">pertinent section in the FAQ list</span></a>.</p>
+</div>
+<div class="section" id="id4">
+<h2>前提</h2>
+<p>Sphinx 运行前需要安装 <strong>Python 2.4</strong> 或者 <strong>Python 3.1</strong> , 以及
+<a class="reference external" href="http://docutils.sf.net/">docutils</a> 和 <a class="reference external" href="http://jinja.pocoo.org/">Jinja2</a> 库.  Sphinx 必须工作在 0.7 版本及一些 SVN 快照(不能损坏).
+如果需要源码支持高亮显示，则必须安装 <a class="reference external" href="http://pygments.org/">Pygments</a> 库.</p>
+<p>如果使用 <strong>Python 2.4</strong> ，还需要 <a class="reference external" href="http://pypi.python.org/pypi/uuid/">uuid</a>.</p>
+</div>
+<div class="section" id="id5">
+<h2>用法</h2>
+<p>更深入的话题,请参考 <a class="reference internal" href="tutorial.html"><span class="doc">Sphinx初尝</span></a> .</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorial.html" class="btn btn-neutral float-right" title="Sphinx初尝" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="译者前言" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

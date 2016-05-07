@@ -1,0 +1,555 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>内联标记 &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="../index.html"/>
+        <link rel="up" title="Sphinx标记的组成" href="index.html"/>
+        <link rel="next" title="未分类标记" href="misc.html"/>
+        <link rel="prev" title="展示示例代码" href="code.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Sphinx标记的组成</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="toctree.html">目录树</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html">段落级别的标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id2">目录表格标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id5">术语</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id6">语法产品的显示</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html">展示示例代码</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">内联标记</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xref-syntax">交叉索引的语法</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">交叉索引的对象</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ref-role">交叉索引的位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">参考文档</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">可下载的参考文件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">其他有趣的交叉索引</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">其他语义标记</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#default-substitutions">替换</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html">未分类标记</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templating.html">Templating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extensions.html">Sphinx Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Sphinx标记的组成</a> &raquo;</li>
+      
+    <li>内联标记</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/markup/inline.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="inline-markup">
+<span id="id1"></span><h1>内联标记</h1>
+<p>Sphinx 使用文本解释角色在文档中插入语义标签.
+这样写 <code class="docutils literal"><span class="pre">:rolename:`content`</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">默认角色 (<code class="docutils literal"><span class="pre">`content`</span></code>) 并不特别.  可使用任何其他有效的名字来代替; 使用 <a href="#id2"><span class="problematic" id="id3">:confval:`default_role`</span></a> 设置.</p>
+</div>
+<p>由主域添加的角色请参考 <a class="reference internal" href="../domains.html#domains"><span class="std std-ref">Sphinx Domains</span></a> .</p>
+<div class="section" id="xref-syntax">
+<span id="id4"></span><h2>交叉索引的语法</h2>
+<p>多数文本解释角色都会产生交叉索引.
+需要写一个 <code class="docutils literal"><span class="pre">:role:`target`</span></code>, 创建名为 <em>target</em> 的链接，类型由 <em>role</em> 指定.  链接文本与 <em>target</em> 一样.</p>
+<p>还有其他的功能，这使得交叉索引更通用:</p>
+<ul>
+<li><p class="first">需要明确的标题及索引标签, 像reST 超链接: <code class="docutils literal"><span class="pre">:role:`title</span> <span class="pre">&lt;target&gt;`</span></code> ，会链接 <em>target</em> 标签, 但链接文本为 <em>title</em>.</p>
+</li>
+<li><p class="first">加前缀 <code class="docutils literal"><span class="pre">!</span></code>, 交叉索引/超链接不会被创建.</p>
+</li>
+<li><p class="first">前缀 <code class="docutils literal"><span class="pre">~</span></code>, 链接文本仅是标签的最后成分.
+例如, <code class="docutils literal"><span class="pre">:py:meth:`~Queue.Queue.get`</span></code> 会建立到 <code class="docutils literal"><span class="pre">Queue.Queue.get</span></code> 的链接，但是链接文本仅显示 <code class="docutils literal"><span class="pre">get</span></code> .</p>
+<p>HTML 文档, 链接的 <code class="docutils literal"><span class="pre">title</span></code> 属性 (显示为鼠标的tool-tip) 一直是完整的标签名.</p>
+</li>
+</ul>
+<div class="section" id="id5">
+<h3>交叉索引的对象</h3>
+<p>这些角色在不同主域里:</p>
+<ul class="simple">
+<li><a class="reference internal" href="../domains.html#python-roles"><span class="std std-ref">Python</span></a></li>
+<li><a class="reference internal" href="../domains.html#c-roles"><span class="std std-ref">C</span></a></li>
+<li><a class="reference internal" href="../domains.html#cpp-roles"><span class="std std-ref">C++</span></a></li>
+<li><a class="reference internal" href="../domains.html#js-roles"><span class="std std-ref">JavaScript</span></a></li>
+<li><a class="reference internal" href="../domains.html#rst-roles"><span class="std std-ref">ReST</span></a></li>
+</ul>
+</div>
+<div class="section" id="ref-role">
+<span id="id6"></span><h3>交叉索引的位置</h3>
+<dl class="role">
+<dt id="role-ref">
+<code class="descname">:ref:</code></dt>
+<dd><p>在文档的任意位置都可以使用交叉索引, 像标准reST 标签一样使用.
+对于文档条目这些标签名必须是唯一的.有两种方式可以链接到这些标签:</p>
+<ul>
+<li><p class="first">标签直接放在章节标题前面, 可以通过 <code class="docutils literal"><span class="pre">:ref:`label-name`</span></code> 引用.例如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_my-reference-label:</span>
+
+<span class="gh">Section to cross-reference</span>
+<span class="gh">--------------------------</span>
+
+章节内容.
+
+需引用自身, 查看 <span class="na">:ref:</span><span class="nv">`my-reference-label`</span>.
+</pre></div>
+</div>
+<p>角色 <code class="docutils literal"><span class="pre">:ref:</span></code> 会产生这个章节的链接, 链接标题是 &#8220;Section to cross-reference&#8221;.
+章节与索引可在不同的源文件.</p>
+<p>自动标签也可以使用 figures: given</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_my-figure:</span>
+
+<span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> whatever
+
+   Figure caption
+</pre></div>
+</div>
+<p>参考 <code class="docutils literal"><span class="pre">:ref:`my-figure`</span></code> 将在图例里插入引用索引，链接文本是 &#8220;Figure caption&#8221;.</p>
+<p>表格也可以使用，在表格标题上使用指令 <a href="#id7"><span class="problematic" id="id8">:dudir:`table`</span></a> .</p>
+</li>
+<li><p class="first">标签不放在章节开头，需要给出明确的链接，使用语法: <code class="docutils literal"><span class="pre">:ref:`Link</span> <span class="pre">title</span> <span class="pre">&lt;label-name&gt;`</span></code>.</p>
+</li>
+</ul>
+<p>推荐使用角色 <a class="reference internal" href="#role-ref" title="ref role"><code class="xref rst rst-role docutils literal"><span class="pre">ref</span></code></a> 而不是标准的reStructuredText 章节链接
+(比如 <code class="docutils literal"><span class="pre">`Section</span> <span class="pre">title`_</span></code>) ，因为它可以在不同文件间使用，并且即使章节标题变化，所有的生成器仍支持这些索引.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id9">
+<h3>参考文档</h3>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.</span></p>
+</div>
+<p>可以直接链接到文档名.</p>
+<dl class="role">
+<dt id="role-doc">
+<code class="descname">:doc:</code></dt>
+<dd><p>链接到指定文档; 文档名可以是绝对或相对的.
+例如, 参考 <code class="docutils literal"><span class="pre">:doc:`parrot`</span></code> 出现在文档 <code class="docutils literal"><span class="pre">sketches/index``中,</span> <span class="pre">将会链接到文档</span> <span class="pre">``sketches/parrot</span></code>.
+如果参考是 <code class="docutils literal"><span class="pre">:doc:`/people`</span></code> 或 <code class="docutils literal"><span class="pre">:doc:`../people`</span></code>, 将会链接到文档 <code class="docutils literal"><span class="pre">people</span></code>.</p>
+<p>如果没有给出链接标题(使用: <code class="docutils literal"><span class="pre">:doc:`Monty</span> <span class="pre">Python</span> <span class="pre">members</span>
+<span class="pre">&lt;/people&gt;`</span></code>), 链接标题就是文档的标题.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id10">
+<h3>可下载的参考文件</h3>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.</span></p>
+</div>
+<dl class="role">
+<dt id="role-download">
+<code class="descname">:download:</code></dt>
+<dd><p>该角色可以链接源目录里可以浏览、但不是reST格式的文档，这些文件将被下载.</p>
+<p>如果使用该角色，被参考的文件会自动包含到输出里(显然仅是HTML输出).
+可下载文件被放在输出目录的子目录 <code class="docutils literal"><span class="pre">_downloads</span></code> 里;文件名被复制.</p>
+<p>示例:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span>查看 <span class="na">:download:</span><span class="nv">`this example script &lt;../example.py&gt;`</span>.
+</pre></div>
+</div>
+<p>文件名是当前路径的相对路径, 绝对路径则被认为以源目录为根目录的相对路径.</p>
+<p>文件 <code class="docutils literal"><span class="pre">example.py</span></code> 被复制到输出目录, 并生成链接.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id11">
+<h3>其他有趣的交叉索引</h3>
+<p>以下角色也会生成索引, 但不对应实体:</p>
+<dl class="role">
+<dt id="role-envvar">
+<code class="descname">:envvar:</code></dt>
+<dd><p>环境变量.  会生成索引.  也会产生到指令 <a class="reference internal" href="../domains.html#directive-envvar" title="envvar directive"><code class="xref rst rst-dir docutils literal"><span class="pre">envvar</span></code></a> 的链接，如果指令存在.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-token">
+<code class="descname">:token:</code></dt>
+<dd><p>语法名子 (用来产生到指令 <a class="reference internal" href="para.html#directive-productionlist" title="productionlist directive"><code class="xref rst rst-dir docutils literal"><span class="pre">productionlist</span></code></a> 的链接).</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-keyword">
+<code class="descname">:keyword:</code></dt>
+<dd><p>Python的关键字.  会创建这些关键字的链接.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-option">
+<code class="descname">:option:</code></dt>
+<dd><p>执行程序的命令行参数.  需包含连字号开头.  产生到指令 <a class="reference internal" href="../domains.html#directive-option" title="option directive"><code class="xref rst rst-dir docutils literal"><span class="pre">option</span></code></a> 的链接.</p>
+</dd></dl>
+
+<p>以下角色产生术语的索引:</p>
+<dl class="role">
+<dt id="role-term">
+<code class="descname">:term:</code></dt>
+<dd><p>术语索引.  术语由指令 <code class="docutils literal"><span class="pre">glossary</span></code> 创建，包含一列术语的定义.
+在同一文件里不能使用 <code class="docutils literal"><span class="pre">term</span></code> 标记,
+Python 文档有一个全局的术语文件 <code class="docutils literal"><span class="pre">glossary.rst</span></code>.</p>
+<p>如果使用的术语不在术语表里, 将会产生警告.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="id12">
+<h2>其他语义标记</h2>
+<p>下面的这些角色以不同样式格式化文本:</p>
+<dl class="role">
+<dt id="role-abbr">
+<code class="descname">:abbr:</code></dt>
+<dd><p>缩写应用.  如果角色后有个括号说明文字，在HTML时会显示成 tool-tip ,仅在LaTeX才会输出.</p>
+<p>例如: <code class="docutils literal"><span class="pre">:abbr:`LIFO</span> <span class="pre">(last-in,</span> <span class="pre">first-out)`</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-command">
+<code class="descname">:command:</code></dt>
+<dd><p>系统级别的命令，例如 <code class="docutils literal"><span class="pre">rm</span></code>.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-dfn">
+<code class="descname">:dfn:</code></dt>
+<dd><p>在文本中标记术语定义.  (不产生索引条目)</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-file">
+<code class="descname">:file:</code></dt>
+<dd><p>文件或目录名.  可以使用花括号指示变量部分, 例如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="cp">... is installed in :file:`/usr/lib/python2.{x}/site-packages` ...</span>
+</pre></div>
+</div>
+<p>在生成文档时, <code class="docutils literal"><span class="pre">x</span></code> 会被Python 的次要版本号替换.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-guilabel">
+<code class="descname">:guilabel:</code></dt>
+<dd><p>表示用户交互接口的标签需使用 <code class="docutils literal"><span class="pre">guilabel</span></code> 标记.  包含基于文本的接口如
+使用 <code class="xref py py-mod docutils literal"><span class="pre">curses</span></code> 创建的或基于其他文本库的标签.  接口标签必须使用该角色标记，
+包括按钮，窗口标题，文件名，菜单，菜单选项，甚至选择列表里的值.</p>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 1.0: </span>GUI 标签可以使用&amp;标示快捷方式;
+输出时&amp;不会显示，而是在文本下面加下划线 (例如:
+<code class="docutils literal"><span class="pre">:guilabel:`&amp;Cancel`</span></code>).  要在输出是包含&amp;，则使用两个&amp;&amp;.</p>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-kbd">
+<code class="descname">:kbd:</code></dt>
+<dd><p>标记键值序列.  键值序列一般依赖于平台或特定应用程序的约定.  如果没有相关的约定,
+键值序列的名字应该可以修改, 以改善新用户或非英语系使用者的体验.  例如, 一个
+<em>xemacs</em> 键序被标记为 <code class="docutils literal"><span class="pre">:kbd:`C-x</span> <span class="pre">C-f`</span></code>, 如果没有特定应用程序或平台可供参考，
+则同样的键序应该被标记为 <code class="docutils literal"><span class="pre">:kbd:`Control-x</span> <span class="pre">Control-f`</span></code>.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-mailheader">
+<code class="descname">:mailheader:</code></dt>
+<dd><p>RFC 822-样式邮件头的名字.  该标记并不表明邮件头在邮件信息里使用, 而是被用来映射所有相同样式的邮件头.
+也被用来定义有邮件头的MIME类型.  在实践中邮件头名通常以相同的方式键入, 遵循 camel-casing 约定，
+有多种通用用法时被优选采用. 例如:
+<code class="docutils literal"><span class="pre">:mailheader:`Content-Type`</span></code>.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-makevar">
+<code class="descname">:makevar:</code></dt>
+<dd><p>命令 <strong class="command">make</strong> 的变量名.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-manpage">
+<code class="descname">:manpage:</code></dt>
+<dd><p>参考 Unix 手册页，包含章节,例如 <code class="docutils literal"><span class="pre">:manpage:`ls(1)`</span></code>.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-menuselection">
+<code class="descname">:menuselection:</code></dt>
+<dd><p>菜单选项由角色 <code class="docutils literal"><span class="pre">menuselection</span></code> 标记.
+标记完整的菜单选项序列，包含子菜单和选择的特定操作，以及所有的子序列.
+独立选项的名字使用 <code class="docutils literal"><span class="pre">--&gt;</span></code> 分隔.</p>
+<p>例如，标记选项 &#8220;Start &gt; Programs&#8221;:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="na">:menuselection:</span><span class="nv">`Start --&gt; Programs`</span>
+</pre></div>
+</div>
+<p>选项如果包含一些指示, 例如某些操作系统会使用一些标志指示命令会打开一个对话框,
+这些指示信息在选项名中会被忽略.</p>
+<p><code class="docutils literal"><span class="pre">menuselection</span></code> 也支持&amp;, 与 <a class="reference internal" href="#role-guilabel" title="guilabel role"><code class="xref rst rst-role docutils literal"><span class="pre">guilabel</span></code></a> 一样使用.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-mimetype">
+<code class="descname">:mimetype:</code></dt>
+<dd><p>MIME 类型, 或者MIME 类型的元素 (主要次要部分可以分开).</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-newsgroup">
+<code class="descname">:newsgroup:</code></dt>
+<dd><p>Usenet 新闻组.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-program">
+<code class="descname">:program:</code></dt>
+<dd><p>执行程序脚本.  与某些平台的可执行文件名不同, 比如Windows 程序的 <code class="docutils literal"><span class="pre">.exe</span></code> (或其他)
+扩展名会被忽略.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-regexp">
+<code class="descname">:regexp:</code></dt>
+<dd><p>正则表达式，不包括引用.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-samp">
+<code class="descname">:samp:</code></dt>
+<dd><p>一块字面量文本，如代码.  文本内可以有花括号变量，如在 <a class="reference internal" href="#role-file" title="file role"><code class="xref rst rst-role docutils literal"><span class="pre">file</span></code></a> 一样.
+例如, 在 <code class="docutils literal"><span class="pre">:samp:`print</span> <span class="pre">1+{variable}`</span></code>, <code class="docutils literal"><span class="pre">variable</span></code> 的部分会被强调.</p>
+<p>如不需要变量部分，使用标准代码即可.</p>
+</dd></dl>
+
+<p>角色 <a class="reference internal" href="misc.html#role-index" title="index role"><code class="xref rst rst-role docutils literal"><span class="pre">index</span></code></a> 会产生索引条目.</p>
+<p>下面的角色会产生外部链接:</p>
+<dl class="role">
+<dt id="role-pep">
+<code class="descname">:pep:</code></dt>
+<dd><p>对Python Enhancement Proposal 的参考.  会产生适当的索引条目及文本 &#8220;PEP <em>number</em>&#8221; ;
+在HTML 文档,该文本是指向在线PEP文档的超链接.  可以链接到特定章节 <code class="docutils literal"><span class="pre">:pep:`number#anchor`</span></code>.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-rfc">
+<code class="descname">:rfc:</code></dt>
+<dd><p>Internet Request for Comments的参考.  也会产生索引条目及文本 &#8220;RFC <em>number</em>&#8221; ;
+在HTML文档里是一个超链接，指定链接章节 <code class="docutils literal"><span class="pre">:rfc:`number#anchor`</span></code>.</p>
+</dd></dl>
+
+<p>如果没有特定的角色能够包含需要的超链接，就使用标准reST 标记.</p>
+</div>
+<div class="section" id="default-substitutions">
+<span id="id13"></span><h2>替换</h2>
+<p>文档系统提供三种默认定义的替换，可在配置文件里设置.</p>
+<dl class="describe">
+<dt>
+<code class="descname">|release|</code></dt>
+<dd><p>被项目文档的发布版本替换.  这时版本字符串包含完整的标签 alpha/beta/release ,例如 <code class="docutils literal"><span class="pre">2.5.2b3</span></code>.  由 <a href="#id14"><span class="problematic" id="id15">:confval:`release`</span></a> 设置.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<code class="descname">|version|</code></dt>
+<dd><p>被项目文档的版本替换. 版本字符串仅有主要和次要两部分组成，例如版本2.5.1会表示为 <code class="docutils literal"><span class="pre">2.5</span></code>.  由 <a href="#id16"><span class="problematic" id="id17">:confval:`version`</span></a> 设置.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<code class="descname">|today|</code></dt>
+<dd><p>替换今天的日期 (文档被读取的日期), 或者配置文件设置的日期.  默认格式为 <code class="docutils literal"><span class="pre">April</span> <span class="pre">14,</span> <span class="pre">2007</span></code>.  可设置 <a href="#id18"><span class="problematic" id="id19">:confval:`today_fmt`</span></a> 及 <a href="#id20"><span class="problematic" id="id21">:confval:`today`</span></a> .</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="misc.html" class="btn btn-neutral float-right" title="未分类标记" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="code.html" class="btn btn-neutral" title="展示示例代码" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

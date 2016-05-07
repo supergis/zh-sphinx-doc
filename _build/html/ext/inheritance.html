@@ -1,0 +1,271 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sphinx.ext.inheritance_diagram – Include inheritance diagrams &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="../index.html"/>
+        <link rel="up" title="Sphinx Extensions" href="../extensions.html"/>
+        <link rel="next" title="sphinx.ext.refcounting – Keep track of reference counting behavior" href="refcounting.html"/>
+        <link rel="prev" title="sphinx.ext.graphviz – Add Graphviz graphs" href="graphviz.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markup/index.html">Sphinx标记的组成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templating.html">Templating</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../extensions.html">Sphinx Extensions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html">Tutorial: Writing a simple extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appapi.html">Extension API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builderapi.html">Writing new builders</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../extensions.html#builtin-sphinx-extensions">Builtin Sphinx extensions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="autodoc.html"><code class="docutils literal"><span class="pre">sphinx.ext.autodoc</span></code> &#8211; Include documentation from docstrings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autosummary.html"><code class="docutils literal"><span class="pre">sphinx.ext.autosummary</span></code> &#8211; Generate autodoc summaries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="doctest.html"><code class="docutils literal"><span class="pre">sphinx.ext.doctest</span></code> &#8211; Test snippets in the documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intersphinx.html"><code class="docutils literal"><span class="pre">sphinx.ext.intersphinx</span></code> &#8211; Link to other projects&#8217; documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math.html">Math support in Sphinx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="graphviz.html"><code class="docutils literal"><span class="pre">sphinx.ext.graphviz</span></code> &#8211; Add Graphviz graphs</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal"><span class="pre">sphinx.ext.inheritance_diagram</span></code> &#8211; Include inheritance diagrams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="refcounting.html"><code class="docutils literal"><span class="pre">sphinx.ext.refcounting</span></code> &#8211; Keep track of reference counting behavior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ifconfig.html"><code class="docutils literal"><span class="pre">sphinx.ext.ifconfig</span></code> &#8211; Include content based on configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coverage.html"><code class="docutils literal"><span class="pre">sphinx.ext.coverage</span></code> &#8211; Collect doc coverage stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="todo.html"><code class="docutils literal"><span class="pre">sphinx.ext.todo</span></code> &#8211; Support for todo items</a></li>
+<li class="toctree-l3"><a class="reference internal" href="extlinks.html"><code class="docutils literal"><span class="pre">sphinx.ext.extlinks</span></code> &#8211; Markup to shorten external links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="viewcode.html"><code class="docutils literal"><span class="pre">sphinx.ext.viewcode</span></code> &#8211; Add links to highlighted source code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oldcmarkup.html"><code class="docutils literal"><span class="pre">sphinx.ext.oldcmarkup</span></code> &#8211; Compatibility extension for old C markup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../extensions.html#third-party-extensions">Third-party extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../extensions.html">Sphinx Extensions</a> &raquo;</li>
+      
+    <li><code class="docutils literal"><span class="pre">sphinx.ext.inheritance_diagram</span></code> &#8211; Include inheritance diagrams</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/ext/inheritance.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-sphinx.ext.inheritance_diagram">
+<span id="sphinx-ext-inheritance-diagram-include-inheritance-diagrams"></span><h1><a class="reference internal" href="#module-sphinx.ext.inheritance_diagram" title="sphinx.ext.inheritance_diagram: Support for displaying inheritance diagrams via graphviz."><code class="xref py py-mod docutils literal"><span class="pre">sphinx.ext.inheritance_diagram</span></code></a> &#8211; Include inheritance diagrams</h1>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.</span></p>
+</div>
+<p>This extension allows you to include inheritance diagrams, rendered via the
+<a class="reference internal" href="graphviz.html#module-sphinx.ext.graphviz" title="sphinx.ext.graphviz: Support for Graphviz graphs."><code class="xref py py-mod docutils literal"><span class="pre">Graphviz</span> <span class="pre">extension</span></code></a>.</p>
+<p>It adds this directive:</p>
+<dl class="directive">
+<dt id="directive-inheritance-diagram">
+<code class="descname">.. inheritance-diagram::</code></dt>
+<dd><p>This directive has one or more arguments, each giving a module or class
+name.  Class names can be unqualified; in that case they are taken to exist
+in the currently described module (see <a class="reference internal" href="../domains.html#directive-py:module" title="py:module directive"><code class="xref rst rst-dir docutils literal"><span class="pre">py:module</span></code></a>).</p>
+<p>For each given class, and each class in each given module, the base classes
+are determined.  Then, from all classes and their base classes, a graph is
+generated which is then rendered via the graphviz extension to a directed
+graph.</p>
+<p>This directive supports an option called <code class="docutils literal"><span class="pre">parts</span></code> that, if given, must be an
+integer, advising the directive to remove that many parts of module names
+from the displayed names.  (For example, if all your class names start with
+<code class="docutils literal"><span class="pre">lib.</span></code>, you can give <code class="docutils literal"><span class="pre">:parts:</span> <span class="pre">1</span></code> to remove that prefix from the displayed
+node names.)</p>
+<p>It also supports a <code class="docutils literal"><span class="pre">private-bases</span></code> flag option; if given, private base
+classes (those whose name starts with <code class="docutils literal"><span class="pre">_</span></code>) will be included.</p>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 1.1: </span>Added <code class="docutils literal"><span class="pre">private-bases</span></code> option; previously, all bases were always
+included.</p>
+</div>
+</dd></dl>
+
+<p>New config values are:</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="refcounting.html" class="btn btn-neutral float-right" title="sphinx.ext.refcounting – Keep track of reference counting behavior" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="graphviz.html" class="btn btn-neutral" title="sphinx.ext.graphviz – Add Graphviz graphs" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

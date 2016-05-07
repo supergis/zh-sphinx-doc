@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>段落级别的标记 &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="../index.html"/>
+        <link rel="up" title="Sphinx标记的组成" href="index.html"/>
+        <link rel="next" title="展示示例代码" href="code.html"/>
+        <link rel="prev" title="目录树" href="toctree.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Sphinx标记的组成</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="toctree.html">目录树</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">段落级别的标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">目录表格标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">术语</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">语法产品的显示</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html">展示示例代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inline.html">内联标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html">未分类标记</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templating.html">Templating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extensions.html">Sphinx Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Sphinx标记的组成</a> &raquo;</li>
+      
+    <li>段落级别的标记</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/markup/para.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>段落级别的标记</h1>
+<p id="index-0">这个指令可以创建简单的段落，也可以如普通文本一样使用内部信息单位:</p>
+<dl class="directive">
+<dt id="directive-note">
+<code class="descname">.. note::</code><code class="descclassname"> </code></dt>
+<dd><p>显示用户使用API时的注意事项.  指令的内容应该使用完整的语句及标点符号.</p>
+<p>例如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">note</span><span class="p">::</span>
+
+   该功能不适于发送垃圾邮件.
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-warning">
+<code class="descname">.. warning::</code><code class="descclassname"> </code></dt>
+<dd><p>显示用户使用API时的注意事项.  指令包含完整的句子和标点符号.
+不同于 <a class="reference internal" href="#directive-note" title="note directive"><code class="xref rst rst-dir docutils literal"><span class="pre">note</span></code></a> ，它一般显示的是信息安全方面的注意事项.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-versionadded">
+<code class="descname">.. versionadded::</code><code class="descclassname"> version</code></dt>
+<dd><p>标示某个版本或C语言的API 新增的特性. 应用在模块条目时，会放置在章节内容的前面.</p>
+<p>第一个参数必须给出版本号，可以添加第二个参数组成一个简单的说明.</p>
+<p>例如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">versionadded</span><span class="p">::</span> 2.5
+   The <span class="ge">*spam*</span> parameter.
+</pre></div>
+</div>
+<p>注意在指令头和说明中间不能有空行; 这样会使标记语言认为这个模块不是连续的.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-versionchanged">
+<code class="descname">.. versionchanged::</code><code class="descclassname"> version</code></dt>
+<dd><p>与 <a class="reference internal" href="#directive-versionadded" title="versionadded directive"><code class="xref rst rst-dir docutils literal"><span class="pre">versionadded</span></code></a> 相似, 但它描述的是该功能在版本中的更改(新参数,效果改变等).</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-deprecated">
+<code class="descname">.. deprecated::</code><code class="descclassname"> version</code></dt>
+<dd><p>与 <a class="reference internal" href="#directive-versionchanged" title="versionchanged directive"><code class="xref rst rst-dir docutils literal"><span class="pre">versionchanged</span></code></a> 相似, 描述的是功能的取消.  解释仍可以给出，比如功能的替代方案.  如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">deprecated</span><span class="p">::</span> 3.1
+   Use <span class="na">:func:</span><span class="nv">`spam`</span> instead.
+</pre></div>
+</div>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="directive">
+<dt id="directive-seealso">
+<code class="descname">.. seealso::</code></dt>
+<dd><p>许多章节包含模块文档或者扩展文档的参考索引列表.这些列表由指令 <a class="reference internal" href="#directive-seealso" title="seealso directive"><code class="xref rst rst-dir docutils literal"><span class="pre">seealso</span></code></a> 创建.</p>
+<p>指令 <a class="reference internal" href="#directive-seealso" title="seealso directive"><code class="xref rst rst-dir docutils literal"><span class="pre">seealso</span></code></a> 通常放在所有子章节的前面.对于HTML文档, 需与主文本分开.</p>
+<p>指令 <a class="reference internal" href="#directive-seealso" title="seealso directive"><code class="xref rst rst-dir docutils literal"><span class="pre">seealso</span></code></a> 内容是reST的定义列表.
+例如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">seealso</span><span class="p">::</span>
+
+   Module <span class="na">:py:mod:</span><span class="nv">`zipfile`</span>
+      标准模块 <span class="na">:py:mod:</span><span class="nv">`zipfile`</span> 的文档.
+
+   <span class="s">`GNU tar manual, Basic Tar Format </span><span class="si">&lt;http://link&gt;</span><span class="s">`_</span>
+      归档文件的文档, 包含 GNU tar 扩展.
+</pre></div>
+</div>
+<p>一个简单的形式:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">seealso</span><span class="p">::</span> modules <span class="na">:py:mod:</span><span class="nv">`zipfile`</span>, <span class="na">:py:mod:</span><span class="nv">`tarfile`</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.5: </span>简单形式.</p>
+</div>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-rubric">
+<code class="descname">.. rubric::</code><code class="descclassname"> title</code></dt>
+<dd><p>该指令用来创建文档标题,但是该标题不出现在文档的目录结构中.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">如果标题被&#8221;Footnotes&#8221;标记出来 (或被其他语言选中), 这个标题在LaTeX会被忽略, 或假定它包含尾注定义,仅创建一个空标题 .</p>
+</div>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-centered">
+<code class="descname">.. centered::</code></dt>
+<dd><p>该指令创建居中加粗文本行.  例如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">centered</span><span class="p">::</span> LICENSE AGREEMENT
+</pre></div>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 1.1: </span>该指令仅在旧版本里声明了.  使用 <code class="xref rst rst-dir docutils literal"><span class="pre">rst-class</span></code> 代替并添加适当的样式.</p>
+</div>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-hlist">
+<code class="descname">.. hlist::</code></dt>
+<dd><p>该指令生成水平列表.  它将列表项横向显示并减少项目的间距使其较为紧凑.</p>
+<p>生成器需支持水平分布, 这里的 <code class="docutils literal"><span class="pre">columns</span></code> 选项定义显示的列数，默认为2.  例如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">hlist</span><span class="p">::</span>
+   <span class="nc">:columns:</span> <span class="nf">3</span>
+
+   <span class="m">*</span> 列表
+   <span class="m">*</span> 的子
+   <span class="m">*</span> 项会
+   <span class="m">*</span> 水平
+   <span class="m">*</span> 排列
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.</span></p>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="id2">
+<h1>目录表格标记</h1>
+<p>指令 <a class="reference internal" href="toctree.html#directive-toctree" title="toctree directive"><code class="xref rst rst-dir docutils literal"><span class="pre">toctree</span></code></a> ，会产生子文档的目录表格, 详见 <a class="reference internal" href="toctree.html#toctree-directive"><span class="std std-ref">目录树</span></a>.</p>
+<p>本地目录表, 则使用标准 reST <a href="#id3"><span class="problematic" id="id4">:dudir:`contents directive
+&lt;table-of-contents&gt;`</span></a>.</p>
+</div>
+<div class="section" id="id5">
+<h1>术语</h1>
+<dl class="directive">
+<dt id="directive-glossary">
+<code class="descname">.. glossary::</code><code class="descclassname"> </code></dt>
+<dd><p>该指令必然包含一个reST式的定义列表标记，由术语和定义组成.  这些定义其后可被 <a class="reference internal" href="inline.html#role-term" title="term role"><code class="xref rst rst-role docutils literal"><span class="pre">term</span></code></a> 引用.  例如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">glossary</span><span class="p">::</span>
+
+   environment
+      一个结构，包含信息是所有文档的保存路径，使用的参考文献等.
+      在解析的阶段使用，因此连续运行时仅需解析新的或修改过的文档.
+
+   source directory
+      根路径，包含子目录，包含一个Sphinx工程的所有源文件.
+</pre></div>
+</div>
+<p>与标准的定义列表相比, 支持多个术语且这些术语可以有内联标记.  可以链接所有术语.  例如:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">glossary</span><span class="p">::</span>
+
+   term 1
+   term 2
+      定义两个术语.
+</pre></div>
+</div>
+<p>(术语排序时，通过第一个术语决定顺序.)</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6: </span>给出术语指令的 <code class="docutils literal"><span class="pre">:sorted:</span></code> 选项，则术语就会按照字母自动排序.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 1.1: </span>开始支持多术语和术语的内联标记.</p>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="id6">
+<h1>语法产品的显示</h1>
+<p>特殊标记形成了一套语法展示产品.
+这些标记很简单，不会试图模型化BNF的各个方面(及其派生形式), 但是提供了足够显示上下文的语法信息，定义符号将以超链接符形式显示.  指令如下:</p>
+<dl class="directive">
+<dt id="directive-productionlist">
+<code class="descname">.. productionlist::</code><code class="descclassname"> [name]</code></dt>
+<dd><p>该指令后跟一组产品.  每个产品一行，有名字组成，与后面的定义通过冒号分隔.
+如果定义有多行，后面的行以冒号开始，且冒号垂直对齐.</p>
+<p><a class="reference internal" href="#directive-productionlist" title="productionlist directive"><code class="xref rst rst-dir docutils literal"><span class="pre">productionlist</span></code></a> 的参数用来区分不同语法产品的列表.</p>
+<p>在 <code class="docutils literal"><span class="pre">productionlist</span></code> 指令参数间不允许有空行.</p>
+<p>定义可以包含别名，以解释文本给出(例如 <code class="docutils literal"><span class="pre">sum</span> <span class="pre">::=</span> <span class="pre">`integer`</span> <span class="pre">&quot;+&quot;</span> <span class="pre">`integer`</span></code>) &#8211; 这会生成产品别名的参照表.
+除了产品列表，还可以使用别名访问 <a class="reference internal" href="inline.html#role-token" title="token role"><code class="xref rst rst-role docutils literal"><span class="pre">token</span></code></a>.</p>
+<p>注意产品内部没有完整的reST解释器, 因此不能避免使用 <code class="docutils literal"><span class="pre">*</span></code> 或 <code class="docutils literal"><span class="pre">|</span></code> 字符.</p>
+</dd></dl>
+
+<p>下面是Python 参考手册的例子:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">productionlist</span><span class="p">::</span>
+   try_stmt: try1_stmt | try2_stmt
+   try1_stmt: &quot;try&quot; &quot;:&quot; <span class="nv">`suite`</span>
+            : (&quot;except&quot; [<span class="nv">`expression`</span> [&quot;,&quot; <span class="nv">`target`</span>]] &quot;:&quot; <span class="nv">`suite`</span>)+
+            : [&quot;else&quot; &quot;:&quot; <span class="nv">`suite`</span>]
+            : [&quot;finally&quot; &quot;:&quot; <span class="nv">`suite`</span>]
+   try2_stmt: &quot;try&quot; &quot;:&quot; <span class="nv">`suite`</span>
+            : &quot;finally&quot; &quot;:&quot; <span class="nv">`suite`</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="code.html" class="btn btn-neutral float-right" title="展示示例代码" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="toctree.html" class="btn btn-neutral" title="目录树" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Storage Backends &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="../index.html"/>
+        <link rel="up" title="Sphinx Web Support" href="../websupport.html"/>
+        <link rel="next" title="Sphinx FAQ" href="../faq.html"/>
+        <link rel="prev" title="Search Adapters" href="searchadapters.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markup/index.html">Sphinx标记的组成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templating.html">Templating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extensions.html">Sphinx Extensions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../websupport.html">Sphinx Web Support</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html">Web Support Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html">The WebSupport Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searchadapters.html">Search Adapters</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Storage Backends</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#storagebackend-methods">StorageBackend Methods</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../websupport.html">Sphinx Web Support</a> &raquo;</li>
+      
+    <li>Storage Backends</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/web/storagebackends.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="storage-backends">
+<span id="storagebackends"></span><h1>Storage Backends</h1>
+<p>To create a custom storage backend you will need to subclass the
+<a class="reference internal" href="#sphinx.websupport.storage.StorageBackend" title="sphinx.websupport.storage.StorageBackend"><code class="xref py py-class docutils literal"><span class="pre">StorageBackend</span></code></a> class.  Then create an instance of the new class and
+pass that as the <cite>storage</cite> keyword argument when you create the
+<a class="reference internal" href="api.html#sphinx.websupport.WebSupport" title="sphinx.websupport.WebSupport"><code class="xref py py-class docutils literal"><span class="pre">WebSupport</span></code></a> object:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">support</span> <span class="o">=</span> <span class="n">WebSupport</span><span class="p">(</span><span class="n">srcdir</span><span class="o">=</span><span class="n">srcdir</span><span class="p">,</span>
+                     <span class="n">builddir</span><span class="o">=</span><span class="n">builddir</span><span class="p">,</span>
+                     <span class="n">storage</span><span class="o">=</span><span class="n">MyStorage</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>For more information about creating a custom storage backend, please see the
+documentation of the <a class="reference internal" href="#sphinx.websupport.storage.StorageBackend" title="sphinx.websupport.storage.StorageBackend"><code class="xref py py-class docutils literal"><span class="pre">StorageBackend</span></code></a> class below.</p>
+<dl class="class">
+<dt id="sphinx.websupport.storage.StorageBackend">
+<em class="property">class </em><code class="descclassname">sphinx.websupport.storage.</code><code class="descname">StorageBackend</code></dt>
+<dd><p>Defines an interface for storage backends.</p>
+</dd></dl>
+
+<div class="section" id="storagebackend-methods">
+<h2>StorageBackend Methods</h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../faq.html" class="btn btn-neutral float-right" title="Sphinx FAQ" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="searchadapters.html" class="btn btn-neutral" title="Search Adapters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Glossary &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="index.html"/>
+        <link rel="prev" title="Sphinx FAQ" href="faq.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markup/index.html">Sphinx标记的组成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templating.html">Templating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Sphinx Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="contents.html">Docs</a> &raquo;</li>
+      
+    <li>Glossary</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/glossary.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="glossary">
+<span id="id1"></span><h1>Glossary</h1>
+<dl class="glossary docutils">
+<dt id="term-builder">builder</dt>
+<dd><p class="first">A class (inheriting from <a class="reference internal" href="ext/builderapi.html#sphinx.builders.Builder" title="sphinx.builders.Builder"><code class="xref py py-class docutils literal"><span class="pre">Builder</span></code></a>) that takes
+parsed documents and performs an action on them.  Normally, builders
+translate the documents to an output format, but it is also possible to
+use the builder builders that e.g. check for broken links in the
+documentation, or build coverage information.</p>
+<p class="last">See <a class="reference internal" href="builders.html#builders"><span class="std std-ref">Available builders</span></a> for an overview over Sphinx&#8217; built-in builders.</p>
+</dd>
+<dt id="term-configuration-directory">configuration directory</dt>
+<dd>The directory containing <code class="file docutils literal"><span class="pre">conf.py</span></code>.  By default, this is the same as
+the <a class="reference internal" href="#term-source-directory"><span class="xref std std-term">source directory</span></a>, but can be set differently with the <strong>-c</strong>
+command-line option.</dd>
+<dt id="term-directive">directive</dt>
+<dd><p class="first">A reStructuredText markup element that allows marking a block of content
+with special meaning.  Directives are supplied not only by docutils, but
+Sphinx and custom extensions can add their own.  The basic directive
+syntax looks like this:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">directivename</span><span class="p">::</span> argument ...
+   <span class="nc">:option:</span> <span class="nf">value</span>
+
+   Content of the directive.
+</pre></div>
+</div>
+<p class="last">See <a class="reference internal" href="rest.html#directives"><span class="std std-ref">指令</span></a> for more information.</p>
+</dd>
+<dt id="term-document-name">document name</dt>
+<dd><p class="first">Since reST source files can have different extensions (some people like
+<code class="docutils literal"><span class="pre">.txt</span></code>, some like <code class="docutils literal"><span class="pre">.rst</span></code> &#8211; the extension can be configured with
+<a href="#id2"><span class="problematic" id="id3">:confval:`source_suffix`</span></a>) and different OSes have different path separators,
+Sphinx abstracts them: <em class="dfn">document names</em> are always relative to the
+<a class="reference internal" href="#term-source-directory"><span class="xref std std-term">source directory</span></a>, the extension is stripped, and path separators
+are converted to slashes.  All values, parameters and such referring to
+&#8220;documents&#8221; expect such document names.</p>
+<p class="last">Examples for document names are <code class="docutils literal"><span class="pre">index</span></code>, <code class="docutils literal"><span class="pre">library/zipfile</span></code>, or
+<code class="docutils literal"><span class="pre">reference/datamodel/types</span></code>.  Note that there is no leading or trailing
+slash.</p>
+</dd>
+<dt id="term-domain">domain</dt>
+<dd><p class="first">A domain is a collection of markup (reStructuredText <a class="reference internal" href="#term-directive"><span class="xref std std-term">directive</span></a>s
+and <a class="reference internal" href="#term-role"><span class="xref std std-term">role</span></a>s) to describe and link to <a class="reference internal" href="#term-object"><span class="xref std std-term">object</span></a>s belonging
+together, e.g. elements of a programming language.  Directive and role
+names in a domain have names like <code class="docutils literal"><span class="pre">domain:name</span></code>, e.g. <code class="docutils literal"><span class="pre">py:function</span></code>.</p>
+<p class="last">Having domains means that there are no naming problems when one set of
+documentation wants to refer to e.g. C++ and Python classes.  It also
+means that extensions that support the documentation of whole new
+languages are much easier to write.  For more information about domains,
+see the chapter <a class="reference internal" href="domains.html#domains"><span class="std std-ref">Sphinx Domains</span></a>.</p>
+</dd>
+<dt id="term-environment">environment</dt>
+<dd>A structure where information about all documents under the root is saved,
+and used for cross-referencing.  The environment is pickled after the
+parsing stage, so that successive runs only need to read and parse new and
+changed documents.</dd>
+<dt id="term-master-document">master document</dt>
+<dd>The document that contains the root <a class="reference internal" href="markup/toctree.html#directive-toctree" title="toctree directive"><code class="xref rst rst-dir docutils literal"><span class="pre">toctree</span></code></a> directive.</dd>
+<dt id="term-object">object</dt>
+<dd>The basic building block of Sphinx documentation.  Every &#8220;object
+directive&#8221; (e.g. <code class="xref rst rst-dir docutils literal"><span class="pre">function</span></code> or <a class="reference internal" href="domains.html#directive-object" title="object directive"><code class="xref rst rst-dir docutils literal"><span class="pre">object</span></code></a>) creates such a block;
+and most objects can be cross-referenced to.</dd>
+<dt id="term-role">role</dt>
+<dd>A reStructuredText markup element that allows marking a piece of text.
+Like directives, roles are extensible.  The basic syntax looks like this:
+<code class="docutils literal"><span class="pre">:rolename:`content`</span></code>.  See <a class="reference internal" href="rest.html#inlinemarkup"><span class="std std-ref">内联标记</span></a> for details.</dd>
+<dt id="term-source-directory">source directory</dt>
+<dd>The directory which, including its subdirectories, contains all source
+files for one Sphinx project.</dd>
+</dl>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="faq.html" class="btn btn-neutral" title="Sphinx FAQ" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

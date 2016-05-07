@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sphinx标记的组成 &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="../index.html"/>
+        <link rel="next" title="目录树" href="toctree.html"/>
+        <link rel="prev" title="reStructuredText 简介" href="../rest.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx标记的组成</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="toctree.html">目录树</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html">段落级别的标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id2">目录表格标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id5">术语</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id6">语法产品的显示</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html">展示示例代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inline.html">内联标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html">未分类标记</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templating.html">Templating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extensions.html">Sphinx Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+    <li>Sphinx标记的组成</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/markup/index.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx">
+<span id="sphinxmarkup"></span><h1>Sphinx标记的组成</h1>
+<p>Sphinx 在 <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html">standard reST
+markup</a> 基础上新增了许多指令和文本解释角色.  本章节是这些特性的参考资料.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="toctree.html">目录树</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="toctree.html#id12">预留名子</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="para.html">段落级别的标记</a></li>
+<li class="toctree-l1"><a class="reference internal" href="para.html#id2">目录表格标记</a></li>
+<li class="toctree-l1"><a class="reference internal" href="para.html#id5">术语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="para.html#id6">语法产品的显示</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html">展示示例代码</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id6">行号</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id7">包含</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="inline.html">内联标记</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="inline.html#xref-syntax">交叉索引的语法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="inline.html#id5">交叉索引的对象</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inline.html#ref-role">交叉索引的位置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inline.html#id9">参考文档</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inline.html#id10">可下载的参考文件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inline.html#id11">其他有趣的交叉索引</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="inline.html#id12">其他语义标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inline.html#default-substitutions">替换</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">未分类标记</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#metadata">文件范围的元数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#id3">元信息标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#id8">索引生成标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tags">包含基于标签的内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html#tables">Tables</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>更多标记请参考 <a class="reference internal" href="../domains.html#domains"><span class="std std-ref">Sphinx Domains</span></a>.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="toctree.html" class="btn btn-neutral float-right" title="目录树" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../rest.html" class="btn btn-neutral" title="reStructuredText 简介" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

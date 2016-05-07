@@ -1,0 +1,629 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Extension API &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="../index.html"/>
+        <link rel="up" title="Sphinx Extensions" href="../extensions.html"/>
+        <link rel="next" title="Writing new builders" href="builderapi.html"/>
+        <link rel="prev" title="Tutorial: Writing a simple extension" href="tutorial.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markup/index.html">Sphinx标记的组成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templating.html">Templating</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../extensions.html">Sphinx Extensions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html">Tutorial: Writing a simple extension</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Extension API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx-core-events">Sphinx core events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-template-bridge">The template bridge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-sphinx.domains">Domain API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="builderapi.html">Writing new builders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../extensions.html#builtin-sphinx-extensions">Builtin Sphinx extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../extensions.html#third-party-extensions">Third-party extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../extensions.html">Sphinx Extensions</a> &raquo;</li>
+      
+    <li>Extension API</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/ext/appapi.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="extension-api">
+<h1>Extension API</h1>
+<p>Each Sphinx extension is a Python module with at least a <code class="xref py py-func docutils literal"><span class="pre">setup()</span></code> function.
+This function is called at initialization time with one argument, the
+application object representing the Sphinx process.  This application object has
+the following public API:</p>
+<dl class="method">
+<dt id="sphinx.application.Sphinx.setup_extension">
+<code class="descclassname">Sphinx.</code><code class="descname">setup_extension</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span></dt>
+<dd><p>Load the extension given by the module <em>name</em>.  Use this if your extension
+needs the features provided by another extension.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_builder">
+<code class="descclassname">Sphinx.</code><code class="descname">add_builder</code><span class="sig-paren">(</span><em>builder</em><span class="sig-paren">)</span></dt>
+<dd><p>Register a new builder.  <em>builder</em> must be a class that inherits from
+<a class="reference internal" href="builderapi.html#sphinx.builders.Builder" title="sphinx.builders.Builder"><code class="xref py py-class docutils literal"><span class="pre">Builder</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_config_value">
+<code class="descclassname">Sphinx.</code><code class="descname">add_config_value</code><span class="sig-paren">(</span><em>name</em>, <em>default</em>, <em>rebuild</em><span class="sig-paren">)</span></dt>
+<dd><p>Register a configuration value.  This is necessary for Sphinx to recognize
+new values and set default values accordingly.  The <em>name</em> should be prefixed
+with the extension name, to avoid clashes.  The <em>default</em> value can be any
+Python object.  The string value <em>rebuild</em> must be one of those values:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">'env'</span></code> if a change in the setting only takes effect when a document is
+parsed &#8211; this means that the whole environment must be rebuilt.</li>
+<li><code class="docutils literal"><span class="pre">'html'</span></code> if a change in the setting needs a full rebuild of HTML
+documents.</li>
+<li><code class="docutils literal"><span class="pre">''</span></code> if a change in the setting will not need any special rebuild.</li>
+</ul>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 0.4: </span>If the <em>default</em> value is a callable, it will be called with the config
+object as its argument in order to get the default value.  This can be
+used to implement config values whose default depends on other values.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 0.6: </span>Changed <em>rebuild</em> from a simple boolean (equivalent to <code class="docutils literal"><span class="pre">''</span></code> or
+<code class="docutils literal"><span class="pre">'env'</span></code>) to a string.  However, booleans are still accepted and
+converted internally.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_domain">
+<code class="descclassname">Sphinx.</code><code class="descname">add_domain</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span></dt>
+<dd><p>Make the given <em>domain</em> (which must be a class; more precisely, a subclass of
+<code class="xref py py-class docutils literal"><span class="pre">Domain</span></code>) known to Sphinx.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.override_domain">
+<code class="descclassname">Sphinx.</code><code class="descname">override_domain</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span></dt>
+<dd><p>Make the given <em>domain</em> class known to Sphinx, assuming that there is already
+a domain with its <code class="docutils literal"><span class="pre">.name</span></code>.  The new domain must be a subclass of the
+existing one.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_index_to_domain">
+<code class="descclassname">Sphinx.</code><code class="descname">add_index_to_domain</code><span class="sig-paren">(</span><em>domain</em>, <em>index</em><span class="sig-paren">)</span></dt>
+<dd><p>Add a custom <em>index</em> class to the domain named <em>domain</em>.  <em>index</em> must be a
+subclass of <code class="xref py py-class docutils literal"><span class="pre">Index</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_event">
+<code class="descclassname">Sphinx.</code><code class="descname">add_event</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span></dt>
+<dd><p>Register an event called <em>name</em>.  This is needed to be able to emit it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_node">
+<code class="descclassname">Sphinx.</code><code class="descname">add_node</code><span class="sig-paren">(</span><em>node</em>, <em>**kwds</em><span class="sig-paren">)</span></dt>
+<dd><p>Register a Docutils node class.  This is necessary for Docutils internals.
+It may also be used in the future to validate nodes in the parsed documents.</p>
+<p>Node visitor functions for the Sphinx HTML, LaTeX, text and manpage writers
+can be given as keyword arguments: the keyword must be one or more of
+<code class="docutils literal"><span class="pre">'html'</span></code>, <code class="docutils literal"><span class="pre">'latex'</span></code>, <code class="docutils literal"><span class="pre">'text'</span></code>, <code class="docutils literal"><span class="pre">'man'</span></code>, <code class="docutils literal"><span class="pre">'texinfo'</span></code>, the value a
+2-tuple of <code class="docutils literal"><span class="pre">(visit,</span> <span class="pre">depart)</span></code> methods.  <code class="docutils literal"><span class="pre">depart</span></code> can be <code class="docutils literal"><span class="pre">None</span></code> if the
+<code class="docutils literal"><span class="pre">visit</span></code> function raises <code class="xref py py-exc docutils literal"><span class="pre">docutils.nodes.SkipNode</span></code>.  Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">math</span><span class="p">(</span><span class="n">docutils</span><span class="o">.</span><span class="n">nodes</span><span class="o">.</span><span class="n">Element</span><span class="p">):</span> <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">visit_math_html</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">starttag</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="s1">&#39;math&#39;</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">depart_math_html</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;/math&gt;&#39;</span><span class="p">)</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">math</span><span class="p">,</span> <span class="n">html</span><span class="o">=</span><span class="p">(</span><span class="n">visit_math_html</span><span class="p">,</span> <span class="n">depart_math_html</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Obviously, translators for which you don&#8217;t specify visitor methods will choke
+on the node when encountered in a document to translate.</p>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 0.5: </span>Added the support for keyword arguments giving visit functions.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_directive">
+<code class="descclassname">Sphinx.</code><code class="descname">add_directive</code><span class="sig-paren">(</span><em>name</em>, <em>func</em>, <em>content</em>, <em>arguments</em>, <em>**options</em><span class="sig-paren">)</span></dt>
+<dt>
+<code class="descclassname">Sphinx.</code><code class="descname">add_directive</code><span class="sig-paren">(</span><em>name</em>, <em>directiveclass</em><span class="sig-paren">)</span></dt>
+<dd><p>Register a Docutils directive.  <em>name</em> must be the prospective directive
+name.  There are two possible ways to write a directive:</p>
+<ul>
+<li><p class="first">In the docutils 0.4 style, <em>obj</em> is the directive function.  <em>content</em>,
+<em>arguments</em> and <em>options</em> are set as attributes on the function and
+determine whether the directive has content, arguments and options,
+respectively.  <strong>This style is deprecated.</strong></p>
+</li>
+<li><p class="first">In the docutils 0.5 style, <em>directiveclass</em> is the directive class.  It
+must already have attributes named <em>has_content</em>, <em>required_arguments</em>,
+<em>optional_arguments</em>, <em>final_argument_whitespace</em> and <em>option_spec</em> that
+correspond to the options for the function way.  See <a class="reference external" href="http://docutils.sourceforge.net/docs/howto/rst-directives.html">the Docutils docs</a> for
+details.</p>
+<p>The directive class must inherit from the class
+<code class="docutils literal"><span class="pre">docutils.parsers.rst.Directive</span></code>.</p>
+</li>
+</ul>
+<p>For example, the (already existing) <a class="reference internal" href="../markup/code.html#directive-literalinclude" title="literalinclude directive"><code class="xref rst rst-dir docutils literal"><span class="pre">literalinclude</span></code></a> directive would be
+added like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">docutils.parsers.rst</span> <span class="kn">import</span> <span class="n">directives</span>
+<span class="n">add_directive</span><span class="p">(</span><span class="s1">&#39;literalinclude&#39;</span><span class="p">,</span> <span class="n">literalinclude_directive</span><span class="p">,</span>
+              <span class="n">content</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">arguments</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+              <span class="n">linenos</span> <span class="o">=</span> <span class="n">directives</span><span class="o">.</span><span class="n">flag</span><span class="p">,</span>
+              <span class="n">language</span> <span class="o">=</span> <span class="n">direcitves</span><span class="o">.</span><span class="n">unchanged</span><span class="p">,</span>
+              <span class="n">encoding</span> <span class="o">=</span> <span class="n">directives</span><span class="o">.</span><span class="n">encoding</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 0.6: </span>Docutils 0.5-style directive classes are now supported.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_directive_to_domain">
+<code class="descclassname">Sphinx.</code><code class="descname">add_directive_to_domain</code><span class="sig-paren">(</span><em>domain</em>, <em>name</em>, <em>func</em>, <em>content</em>, <em>arguments</em>, <em>**options</em><span class="sig-paren">)</span></dt>
+<dt>
+<code class="descclassname">Sphinx.</code><code class="descname">add_directive_to_domain</code><span class="sig-paren">(</span><em>domain</em>, <em>name</em>, <em>directiveclass</em><span class="sig-paren">)</span></dt>
+<dd><p>Like <a class="reference internal" href="#sphinx.application.Sphinx.add_directive" title="sphinx.application.Sphinx.add_directive"><code class="xref py py-meth docutils literal"><span class="pre">add_directive()</span></code></a>, but the directive is added to the domain named
+<em>domain</em>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_role">
+<code class="descclassname">Sphinx.</code><code class="descname">add_role</code><span class="sig-paren">(</span><em>name</em>, <em>role</em><span class="sig-paren">)</span></dt>
+<dd><p>Register a Docutils role.  <em>name</em> must be the role name that occurs in the
+source, <em>role</em> the role function (see the <a class="reference external" href="http://docutils.sourceforge.net/docs/howto/rst-roles.html">Docutils documentation</a> on details).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_role_to_domain">
+<code class="descclassname">Sphinx.</code><code class="descname">add_role_to_domain</code><span class="sig-paren">(</span><em>domain</em>, <em>name</em>, <em>role</em><span class="sig-paren">)</span></dt>
+<dd><p>Like <a class="reference internal" href="#sphinx.application.Sphinx.add_role" title="sphinx.application.Sphinx.add_role"><code class="xref py py-meth docutils literal"><span class="pre">add_role()</span></code></a>, but the role is added to the domain named <em>domain</em>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_generic_role">
+<code class="descclassname">Sphinx.</code><code class="descname">add_generic_role</code><span class="sig-paren">(</span><em>name</em>, <em>nodeclass</em><span class="sig-paren">)</span></dt>
+<dd><p>Register a Docutils role that does nothing but wrap its contents in the
+node given by <em>nodeclass</em>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_object_type">
+<code class="descclassname">Sphinx.</code><code class="descname">add_object_type</code><span class="sig-paren">(</span><em>directivename</em>, <em>rolename</em>, <em>indextemplate=''</em>, <em>parse_node=None</em>, <em>ref_nodeclass=None</em>, <em>objname=''</em>, <em>doc_field_types=[]</em><span class="sig-paren">)</span></dt>
+<dd><p>This method is a very convenient way to add a new <a class="reference internal" href="../glossary.html#term-object"><span class="xref std std-term">object</span></a> type that
+can be cross-referenced.  It will do this:</p>
+<ul class="simple">
+<li>Create a new directive (called <em>directivename</em>) for documenting an object.
+It will automatically add index entries if <em>indextemplate</em> is nonempty; if
+given, it must contain exactly one instance of <code class="docutils literal"><span class="pre">%s</span></code>.  See the example
+below for how the template will be interpreted.</li>
+<li>Create a new role (called <em>rolename</em>) to cross-reference to these
+object descriptions.</li>
+<li>If you provide <em>parse_node</em>, it must be a function that takes a string and
+a docutils node, and it must populate the node with children parsed from
+the string.  It must then return the name of the item to be used in
+cross-referencing and index entries.  See the <code class="file docutils literal"><span class="pre">conf.py</span></code> file in the
+source for this documentation for an example.</li>
+<li>The <em>objname</em> (if not given, will default to <em>directivename</em>) names the
+type of object.  It is used when listing objects, e.g. in search results.</li>
+</ul>
+<p>For example, if you have this call in a custom Sphinx extension:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span>app.add_object_type(&#39;directive&#39;, &#39;dir&#39;, &#39;pair: %s; directive&#39;)
+</pre></div>
+</div>
+<p>you can use this markup in your documents:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">rst:directive</span><span class="p">::</span> function
+
+   Document a function.
+
+<span class="nt">&lt;...&gt;</span>
+
+See also the <span class="na">:rst:dir:</span><span class="nv">`function`</span> directive.
+</pre></div>
+</div>
+<p>For the directive, an index entry will be generated as if you had prepended</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">index</span><span class="p">::</span> pair: function; directive
+</pre></div>
+</div>
+<p>The reference node will be of class <code class="docutils literal"><span class="pre">literal</span></code> (so it will be rendered in a
+proportional font, as appropriate for code) unless you give the <em>ref_nodeclass</em>
+argument, which must be a docutils node class (most useful are
+<code class="docutils literal"><span class="pre">docutils.nodes.emphasis</span></code> or <code class="docutils literal"><span class="pre">docutils.nodes.strong</span></code> &#8211; you can also use
+<code class="docutils literal"><span class="pre">docutils.nodes.generated</span></code> if you want no further text decoration).</p>
+<p>For the role content, you have the same syntactical possibilities as for
+standard Sphinx roles (see <a class="reference internal" href="../markup/inline.html#xref-syntax"><span class="std std-ref">交叉索引的语法</span></a>).</p>
+<p>This method is also available under the deprecated alias
+<code class="docutils literal"><span class="pre">add_description_unit</span></code>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_crossref_type">
+<code class="descclassname">Sphinx.</code><code class="descname">add_crossref_type</code><span class="sig-paren">(</span><em>directivename</em>, <em>rolename</em>, <em>indextemplate=''</em>, <em>ref_nodeclass=None</em>, <em>objname=''</em><span class="sig-paren">)</span></dt>
+<dd><p>This method is very similar to <a class="reference internal" href="#sphinx.application.Sphinx.add_object_type" title="sphinx.application.Sphinx.add_object_type"><code class="xref py py-meth docutils literal"><span class="pre">add_object_type()</span></code></a> except that the
+directive it generates must be empty, and will produce no output.</p>
+<p>That means that you can add semantic targets to your sources, and refer to
+them using custom roles instead of generic ones (like <a class="reference internal" href="../markup/inline.html#role-ref" title="ref role"><code class="xref rst rst-role docutils literal"><span class="pre">ref</span></code></a>).  Example
+call:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span>app.add_crossref_type(&#39;topic&#39;, &#39;topic&#39;, &#39;single: %s&#39;, docutils.nodes.emphasis)
+</pre></div>
+</div>
+<p>Example usage:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">topic</span><span class="p">::</span> application API
+
+<span class="gh">The application API</span>
+<span class="gh">-------------------</span>
+
+<span class="nt">&lt;...&gt;</span>
+
+See also <span class="na">:topic:</span><span class="nv">`this section &lt;application API&gt;`</span>.
+</pre></div>
+</div>
+<p>(Of course, the element following the <code class="docutils literal"><span class="pre">topic</span></code> directive needn&#8217;t be a
+section.)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_transform">
+<code class="descclassname">Sphinx.</code><code class="descname">add_transform</code><span class="sig-paren">(</span><em>transform</em><span class="sig-paren">)</span></dt>
+<dd><p>Add the standard docutils <code class="xref py py-class docutils literal"><span class="pre">Transform</span></code> subclass <em>transform</em> to the list
+of transforms that are applied after Sphinx parses a reST document.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_javascript">
+<code class="descclassname">Sphinx.</code><code class="descname">add_javascript</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span></dt>
+<dd><p>Add <em>filename</em> to the list of JavaScript files that the default HTML template
+will include.  The filename must be relative to the HTML static path, see
+<a href="#id1"><span class="problematic" id="id2">:confval:`the docs for the config value &lt;html_static_path&gt;`</span></a>.  A full URI with
+scheme, like <code class="docutils literal"><span class="pre">http://example.org/foo.js</span></code>, is also supported.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_stylesheet">
+<code class="descclassname">Sphinx.</code><code class="descname">add_stylesheet</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span></dt>
+<dd><p>Add <em>filename</em> to the list of CSS files that the default HTML template will
+include.  Like for <a class="reference internal" href="#sphinx.application.Sphinx.add_javascript" title="sphinx.application.Sphinx.add_javascript"><code class="xref py py-meth docutils literal"><span class="pre">add_javascript()</span></code></a>, the filename must be relative to
+the HTML static path, or a full URI with scheme.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_lexer">
+<code class="descclassname">Sphinx.</code><code class="descname">add_lexer</code><span class="sig-paren">(</span><em>alias</em>, <em>lexer</em><span class="sig-paren">)</span></dt>
+<dd><p>Use <em>lexer</em>, which must be an instance of a Pygments lexer class, to
+highlight code blocks with the given language <em>alias</em>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_autodocumenter">
+<code class="descclassname">Sphinx.</code><code class="descname">add_autodocumenter</code><span class="sig-paren">(</span><em>cls</em><span class="sig-paren">)</span></dt>
+<dd><p>Add <em>cls</em> as a new documenter class for the <a class="reference internal" href="autodoc.html#module-sphinx.ext.autodoc" title="sphinx.ext.autodoc: Include documentation from docstrings."><code class="xref py py-mod docutils literal"><span class="pre">sphinx.ext.autodoc</span></code></a>
+extension.  It must be a subclass of <code class="xref py py-class docutils literal"><span class="pre">sphinx.ext.autodoc.Documenter</span></code>.
+This allows to auto-document new types of objects.  See the source of the
+autodoc module for examples on how to subclass <code class="xref py py-class docutils literal"><span class="pre">Documenter</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_autodoc_attrgetter">
+<code class="descclassname">Sphinx.</code><code class="descname">add_autodoc_attrgetter</code><span class="sig-paren">(</span><em>type</em>, <em>getter</em><span class="sig-paren">)</span></dt>
+<dd><p>Add <em>getter</em>, which must be a function with an interface compatible to the
+<code class="xref py py-func docutils literal"><span class="pre">getattr()</span></code> builtin, as the autodoc attribute getter for objects that are
+instances of <em>type</em>.  All cases where autodoc needs to get an attribute of a
+type are then handled by this function instead of <code class="xref py py-func docutils literal"><span class="pre">getattr()</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.6.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.add_search_language">
+<code class="descclassname">Sphinx.</code><code class="descname">add_search_language</code><span class="sig-paren">(</span><em>cls</em><span class="sig-paren">)</span></dt>
+<dd><p>Add <em>cls</em>, which must be a subclass of <code class="xref py py-class docutils literal"><span class="pre">sphinx.search.SearchLanguage</span></code>,
+as a support language for building the HTML full-text search index.  The
+class must have a <em>lang</em> attribute that indicates the language it should be
+used for.  See <a href="#id3"><span class="problematic" id="id4">:confval:`html_search_language`</span></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.1.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.connect">
+<code class="descclassname">Sphinx.</code><code class="descname">connect</code><span class="sig-paren">(</span><em>event</em>, <em>callback</em><span class="sig-paren">)</span></dt>
+<dd><p>Register <em>callback</em> to be called when <em>event</em> is emitted.  For details on
+available core events and the arguments of callback functions, please see
+<a class="reference internal" href="#events"><span class="std std-ref">Sphinx core events</span></a>.</p>
+<p>The method returns a &#8220;listener ID&#8221; that can be used as an argument to
+<a class="reference internal" href="#sphinx.application.Sphinx.disconnect" title="sphinx.application.Sphinx.disconnect"><code class="xref py py-meth docutils literal"><span class="pre">disconnect()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.disconnect">
+<code class="descclassname">Sphinx.</code><code class="descname">disconnect</code><span class="sig-paren">(</span><em>listener_id</em><span class="sig-paren">)</span></dt>
+<dd><p>Unregister callback <em>listener_id</em>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.emit">
+<code class="descclassname">Sphinx.</code><code class="descname">emit</code><span class="sig-paren">(</span><em>event</em>, <em>*arguments</em><span class="sig-paren">)</span></dt>
+<dd><p>Emit <em>event</em> and pass <em>arguments</em> to the callback functions.  Return the
+return values of all callbacks as a list.  Do not emit core Sphinx events
+in extensions!</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.emit_firstresult">
+<code class="descclassname">Sphinx.</code><code class="descname">emit_firstresult</code><span class="sig-paren">(</span><em>event</em>, <em>*arguments</em><span class="sig-paren">)</span></dt>
+<dd><p>Emit <em>event</em> and pass <em>arguments</em> to the callback functions.  Return the
+result of the first callback that doesn&#8217;t return <code class="docutils literal"><span class="pre">None</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.5.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.application.Sphinx.require_sphinx">
+<code class="descclassname">Sphinx.</code><code class="descname">require_sphinx</code><span class="sig-paren">(</span><em>version</em><span class="sig-paren">)</span></dt>
+<dd><p>Compare <em>version</em> (which must be a <code class="docutils literal"><span class="pre">major.minor</span></code> version string,
+e.g. <code class="docutils literal"><span class="pre">'1.1'</span></code>) with the version of the running Sphinx, and abort the build
+when it is too old.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.</span></p>
+</div>
+</dd></dl>
+
+<dl class="exception">
+<dt id="sphinx.application.ExtensionError">
+<em class="property">exception </em><code class="descclassname">sphinx.application.</code><code class="descname">ExtensionError</code></dt>
+<dd><p>All these functions raise this exception if something went wrong with the
+extension API.</p>
+</dd></dl>
+
+<p>Examples of using the Sphinx extension API can be seen in the <code class="xref py py-mod docutils literal"><span class="pre">sphinx.ext</span></code>
+package.</p>
+<div class="section" id="sphinx-core-events">
+<span id="events"></span><h2>Sphinx core events</h2>
+<p>These events are known to the core.  The arguments shown are given to the
+registered event handlers.</p>
+</div>
+<div class="section" id="the-template-bridge">
+<span id="template-bridge"></span><h2>The template bridge</h2>
+</div>
+<div class="section" id="module-sphinx.domains">
+<span id="id5"></span><span id="domain-api"></span><h2>Domain API</h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="builderapi.html" class="btn btn-neutral float-right" title="Writing new builders" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tutorial.html" class="btn btn-neutral" title="Tutorial: Writing a simple extension" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

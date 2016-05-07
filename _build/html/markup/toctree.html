@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>目录树 &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="../index.html"/>
+        <link rel="up" title="Sphinx标记的组成" href="index.html"/>
+        <link rel="next" title="段落级别的标记" href="para.html"/>
+        <link rel="prev" title="Sphinx标记的组成" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Sphinx标记的组成</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">目录树</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">预留名子</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="para.html">段落级别的标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id2">目录表格标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id5">术语</a></li>
+<li class="toctree-l2"><a class="reference internal" href="para.html#id6">语法产品的显示</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html">展示示例代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inline.html">内联标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html">未分类标记</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templating.html">Templating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extensions.html">Sphinx Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Sphinx标记的组成</a> &raquo;</li>
+      
+    <li>目录树</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/markup/toctree.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="toctree-directive">
+<span id="id1"></span><h1>目录树</h1>
+<p id="index-0">目前 reST 还没有专门的语法表示文件的相互关联或怎样将一份文档拆分成多个输出文件，
+Sphinx 使用自定义的指令在独立文件里添加这种关系或目录表格.
+指令 <code class="docutils literal"><span class="pre">toctree</span></code> 是其核心元素.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">简单的在一个文件里包含另一个文件也可以完成包含指令 <a href="#id2"><span class="problematic" id="id3">:dudir:`include`</span></a> .</p>
+</div>
+<dl class="directive">
+<dt id="directive-toctree">
+<code class="descname">.. toctree::</code></dt>
+<dd><p>该指令在当前位置插入一个目录树 &#8220;TOC tree&#8221; ,在文档中使用独立的 TOCs (包括 &#8220;sub-TOC trees&#8221;)给出指令的主体.
+相对文件名 (不以缩写开头) 是指令所在的文件的相对路径，绝对文件名则以源目录为根目录.
+数值 <code class="docutils literal"><span class="pre">maxdepth</span></code> 选项指定目录的层次，默认包含所有的层次. <a class="footnote-reference" href="#id13" id="id4">[1]</a></p>
+<p>下面是一个例子 (以Python文档库作为参考):</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:maxdepth:</span> <span class="nf">2</span>
+
+   intro
+   strings
+   datatypes
+   numeric
+   (更多的文档列在下面)
+</pre></div>
+</div>
+<p>它实现了两种功能:</p>
+<ul class="simple">
+<li>插入所有文档的目录表格，深度为2表示文档必须有一个标题.
+这些文档内的指令 <code class="docutils literal"><span class="pre">toctree</span></code> 也会被插入.</li>
+<li>Sphinx 确定了 <code class="docutils literal"><span class="pre">intro</span></code>, <code class="docutils literal"><span class="pre">strings</span></code> 这几个字符串在文档中的相对顺序，并知道它们是本文档的子页面，是文档库的索引.
+根据这些信息可产生 &#8220;下一个主题&#8221;, &#8220;上一个主题&#8221; 及 &#8220;父页面&#8221; 的链接.</li>
+</ul>
+<p><strong>条目</strong></p>
+<p>目录树里的标题是由 <a class="reference internal" href="#directive-toctree" title="toctree directive"><code class="xref rst rst-dir docutils literal"><span class="pre">toctree</span></code></a> 指令自动罗列其包含文档的标题. 如果不合适，
+可以使用与reST超链接相似的标签符号自定义一个标题，(或使用Sphinx的 <a class="reference internal" href="inline.html#xref-syntax"><span class="std std-ref">cross-referencing syntax</span></a>).
+如下:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+
+   intro
+   All about strings &lt;strings&gt;
+   datatypes
+</pre></div>
+</div>
+<p>上面的第二行中 <code class="docutils literal"><span class="pre">strings</span></code> 是文档名, 但是在目录树里会使用 &#8220;All about strings&#8221; 作为标题名.</p>
+<p>也可以添加外部链接，只要使用HTTP URL 代替文档名就可以了.</p>
+<p><strong>章节编号</strong></p>
+<p>如果希望在HTML为章节编号，仅需给出选项 <code class="docutils literal"><span class="pre">numbered</span></code> .  例如:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:numbered:</span>
+
+   foo
+   bar
+</pre></div>
+</div>
+<p>编号以标题 <code class="docutils literal"><span class="pre">foo</span></code> 开始.子目录也会自动编号 (不需在给出 <code class="docutils literal"><span class="pre">numbered</span></code> 选项).</p>
+<p>也可以定义编号的深度, 需在 <code class="docutils literal"><span class="pre">numbered</span></code> 后给出深度的参数.</p>
+<p><strong>其他选项</strong></p>
+<p>如果希望目录里仅出现文档的标题，不出现文中其他同等级的标题行（同一缩进）, 可以使用选项 <code class="docutils literal"><span class="pre">titlesonly</span></code></p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:titlesonly:</span>
+
+   foo
+   bar
+</pre></div>
+</div>
+<p>使用匹配指令 &#8220;globbing&#8221; , 只需给出 <code class="docutils literal"><span class="pre">glob</span></code> 选项.  可用文档列表里的所有条目都会被匹配，
+并且按照字母顺序插入 .  例如:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:glob:</span>
+
+   intro*
+   recipe/*
+   *
+</pre></div>
+</div>
+<p>以上会包含所有以 <code class="docutils literal"><span class="pre">intro</span></code> 开头的文档及 <code class="docutils literal"><span class="pre">recipe</span></code> 目录下的所有文件,第三行匹配所有剩下的文件 (除了包含该目录树指令的文件,即当前文件.) <a class="footnote-reference" href="#id16" id="id5">[2]</a></p>
+<p>特殊名字 <code class="docutils literal"><span class="pre">self</span></code> 可以代替当前文件.  这在从目录树生成导航地图（ &#8220;sitemap&#8221; ）时非常有用.</p>
+<p>还可以给出 &#8220;hidden&#8221; 选项, 如下:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:hidden:</span>
+
+   doc_1
+   doc_2
+</pre></div>
+</div>
+<p>文件仍会存在于Sphinx 的文档结构中，但是不会在当前指令位置插入目录 &#8211; 其后可以按照特定的方式插入该文件的链接，比如在HTML边框栏里.</p>
+<p>最后, 在 <a class="reference internal" href="../glossary.html#term-source-directory"><span class="xref std std-term">source directory</span></a> (包括子目录)里的所有文件都需出现在某个 <code class="docutils literal"><span class="pre">toctree</span></code> 指令里;
+否则Sphinx会报出警告, 因为该文件没有通过标准导航.
+可以使用 <a href="#id6"><span class="problematic" id="id7">:confval:`unused_docs`</span></a> 排除某些文件，使用 <a href="#id8"><span class="problematic" id="id9">:confval:`exclude_trees`</span></a> 排除整个目录.</p>
+<p>主文档（ &#8220;master document&#8221; ）(由 <a href="#id10"><span class="problematic" id="id11">:confval:`master_doc`</span></a> 指定) 是整个目录结构的根.
+可以作为文档的主页面, 如果不给出 <code class="docutils literal"><span class="pre">maxdepth</span></code> 选项，则会是&#8221;填满目录内容的表格&#8221;.</p>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 0.3: </span>增加 &#8220;globbing&#8221; 选项.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 0.6: </span>增加 &#8220;numbered&#8221; 及 &#8220;hidden&#8221; 选项，及外部链接，支持&#8221;self&#8221; 关键字.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 1.0: </span>增加 &#8220;titlesonly&#8221; 选项.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 1.1: </span>增加&#8221;numbered&#8221;选项的数值参数 .</p>
+</div>
+</dd></dl>
+
+<div class="section" id="id12">
+<h2>预留名子</h2>
+<p>Sphinx 有些保留的文档名; 试图创建这些名字的文档会产生错误.</p>
+<p>这些特殊的文档名 (生成的页面) 有:</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">genindex</span></code>, <code class="docutils literal"><span class="pre">modindex</span></code>, <code class="docutils literal"><span class="pre">search</span></code></p>
+<p>分别对应通用索引, Python模块索引, 及搜索页面 .</p>
+<p>通用索引封装了模块条目，所有
+<a class="reference internal" href="../domains.html#basic-domain-markup"><span class="std std-ref">object descriptions</span></a> 生成的索引, 及 <a class="reference internal" href="misc.html#directive-index" title="index directive"><code class="xref rst rst-dir docutils literal"><span class="pre">index</span></code></a>
+指令生成的索引.</p>
+<p>Python模块索引包含每个 <a class="reference internal" href="../domains.html#directive-py:module" title="py:module directive"><code class="xref rst rst-dir docutils literal"><span class="pre">py:module</span></code></a> 指令生成的索引.</p>
+<p>搜索页面包含的表单使用JSON格式的搜索索引，然后JavaScript根据输入的搜索词,
+全文搜索整个文档;因此,需要工作在支持现代JavaScript的浏览器中.</p>
+</li>
+<li><p class="first">名字以 <code class="docutils literal"><span class="pre">_</span></code> 开头</p>
+<p>尽管仅有少数预留的文档名还被使用, 但是最好不要创建同名文档或在文档路径中包含这些名字.
+(使用 <code class="docutils literal"><span class="pre">_</span></code> 前缀定义模板路径是个好方法.)</p>
+</li>
+</ul>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="id13" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[1]</a></td><td>选项 <code class="docutils literal"><span class="pre">maxdepth</span></code> 不适用于 LaTeX , 其在文档开始部分就会出现包含所有文件的目录表,
+它的深度使用 <code class="docutils literal"><span class="pre">tocdepth</span></code> 计数器控制, 可以使用 <a href="#id14"><span class="problematic" id="id15">:confval:`latex_preamble`</span></a> 重新配置，例如 <code class="docutils literal"><span class="pre">\setcounter{tocdepth}{2}</span></code>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id16" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[2]</a></td><td>所有可以使用的匹配符号: 标准 shell 表达式如 <code class="docutils literal"><span class="pre">*</span></code>, <code class="docutils literal"><span class="pre">?</span></code>, <code class="docutils literal"><span class="pre">[...]</span></code> 及 <code class="docutils literal"><span class="pre">[!...]</span></code> ，但其不匹配斜杠.
+使用双星号 <code class="docutils literal"><span class="pre">**</span></code> 可以匹配任何包含斜杠的字符串.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="para.html" class="btn btn-neutral float-right" title="段落级别的标记" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Sphinx标记的组成" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

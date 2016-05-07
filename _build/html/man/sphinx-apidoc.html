@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sphinx-apidoc manual page &mdash; Sphinx 使用手册</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Sphinx 使用手册" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> Sphinx 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">译者前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#id2">欢迎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">引言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Sphinx初尝</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html">调用 sphinx-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../invocation.html#sphinx-apidoc">调用 sphinx-apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rest.html">reStructuredText 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markup/index.html">Sphinx标记的组成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../domains.html">Sphinx Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builders.html">Available builders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">The build configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intl.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theming.html">HTML theming support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../templating.html">Templating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extensions.html">Sphinx Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../websupport.html">Sphinx Web Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Sphinx FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">Sphinx 使用手册</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+    <li>sphinx-apidoc manual page</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/man/sphinx-apidoc.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx-apidoc-manual-page">
+<h1>sphinx-apidoc manual page</h1>
+<div class="section" id="synopsis">
+<h2>Synopsis</h2>
+<p><strong>sphinx-apidoc</strong> [<em>options</em>] -o &lt;<em>outputdir</em>&gt; &lt;<em>sourcedir</em>&gt; [<em>pathnames</em> ...]</p>
+</div>
+<div class="section" id="description">
+<h2>Description</h2>
+<p><strong class="program">sphinx-apidoc</strong> is a tool for automatic generation of Sphinx sources
+that, using the autodoc extension, document a whole package in the style of
+other automatic API documentation tools.</p>
+<p><em>sourcedir</em> must point to a Python package.  Any <em>pathnames</em> given are paths to
+be excluded from the generation.</p>
+</div>
+<div class="section" id="options">
+<h2>Options</h2>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-o <var>&lt;outputdir&gt;</var></span></kbd></td>
+<td>Directory to place the output files.  If it does not exist,
+it is created.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-f</span>, <span class="option">--force</span></kbd></td>
+<td>Usually, apidoc does not overwrite files, unless this option
+is given.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-n</span>, <span class="option">--dry-run</span></kbd></td>
+<td>If given, apidoc does not create any files.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-s <var>&lt;suffix&gt;</var></span></kbd></td>
+<td>Suffix for the source files generated, default is <code class="docutils literal"><span class="pre">rst</span></code>.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-d <var>&lt;maxdepth&gt;</var></span></kbd></td>
+<td>Maximum depth for the generated table of contents file.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-T</span>, <span class="option">--no-toc</span></kbd></td>
+<td>Do not create a table of contents file.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-F</span>, <span class="option">--full</span></kbd></td>
+<td>If given, a full Sphinx project is generated (<code class="docutils literal"><span class="pre">conf.py</span></code>,
+<code class="docutils literal"><span class="pre">Makefile</span></code> etc.) using sphinx-quickstart.</td></tr>
+</tbody>
+</table>
+<p>These options are used with <code class="docutils literal"><span class="pre">-F</span></code>:</p>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-H <var>&lt;project&gt;</var></span></kbd></td>
+<td>Project name to put into the configuration.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-A <var>&lt;author&gt;</var></span></kbd></td>
+<td>Author name(s) to put into the configuration.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-V <var>&lt;version&gt;</var></span></kbd></td>
+<td>Project version.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-R <var>&lt;release&gt;</var></span></kbd></td>
+<td>Project release.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="see-also">
+<h2>See also</h2>
+<p><em class="manpage">sphinx-build(1)</em></p>
+</div>
+<div class="section" id="author">
+<h2>Author</h2>
+<p>Etienne Desautels, &lt;<a class="reference external" href="mailto:etienne&#46;desautels&#37;&#52;&#48;gmail&#46;com">etienne<span>&#46;</span>desautels<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;, Georg Brandl
+&lt;<a class="reference external" href="mailto:georg&#37;&#52;&#48;python&#46;org">georg<span>&#64;</span>python<span>&#46;</span>org</a>&gt; et al.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
